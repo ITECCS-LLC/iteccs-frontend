@@ -2,308 +2,1359 @@
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T85X67KT5F"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T85X67KT5F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T85X67KT5F');
+  </script>
 
-  gtag('config', 'G-T85X67KT5F');
-</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Technical Advisory | ITECCS Applied Math, AI & HPC Consulting</title>  <link rel="canonical" href="https://iteccs.com/consulting" />
+  <title>Technical Advisory | ITECCS Applied Math, AI & HPC Consulting</title>
+  <link rel="canonical" href="https://iteccs.com/consulting" />
 
   <meta name="description" content="Technical advisory in applied mathematics, AI, scientific computing, and HPC. ITECCS supports universities, industry, and government R&D.">
-    <meta property="og:title" content="Technical Advisory | ITECCS" />
+  <meta property="og:title" content="Technical Advisory | ITECCS" />
   <meta property="og:description" content="Technical advisory in applied mathematics, AI, scientific computing, and HPC for universities, industry, and government." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://iteccs.com/consulting" />
   <meta property="og:image" content="https://iteccs.com/consulting-bg.webp" />
-  <link rel="stylesheet" href="style.css">
 
-  <!-- Fonts and Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Technical Advisory | ITECCS" />
+  <meta name="twitter:description" content="Technical advisory in applied mathematics, AI, scientific computing, and HPC." />
+  <meta name="twitter:image" content="https://iteccs.com/consulting-bg.webp" />
+
+  <!-- Schema: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://iteccs.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Consulting", "item": "https://iteccs.com/consulting" }
+    ]
+  }
+  </script>
+
+  <!-- Schema: ProfessionalService / Service offerings -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "ITECCS Technical Advisory",
+    "url": "https://iteccs.com/consulting",
+    "description": "Technical advisory in applied mathematics, AI, scientific computing, HPC, CFD, FEA, multiphysics simulation, and digital twins.",
+    "provider": {
+      "@type": "EducationalOrganization",
+      "name": "ITECCS",
+      "url": "https://iteccs.com"
+    },
+    "areaServed": "Worldwide",
+    "serviceType": [
+      "Scientific Computing Consulting",
+      "Computational Modeling Services",
+      "CFD Consulting Services",
+      "Finite Element Analysis Consulting",
+      "Multiphysics Simulation Services",
+      "High Performance Computing Consulting",
+      "Digital Twin Consulting Services",
+      "Scientific Machine Learning Consulting"
+    ]
+  }
+  </script>
+
+  <!-- Schema: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What consulting services does ITECCS offer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ITECCS offers technical advisory in scientific computing, computational modeling, CFD consulting, finite element analysis (FEA) consulting, multiphysics simulation, high-performance computing (HPC), digital twin consulting, and scientific machine learning consulting."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who does ITECCS work with?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ITECCS works with universities, research laboratories, industry R&D teams, engineering firms, startups, and government agencies on technical advisory, computational modeling, and research-to-deployment projects."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is multiphysics simulation consulting?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Multiphysics simulation consulting involves modeling systems where multiple physical processes interact, such as fluid flow, heat transfer, structural deformation, and electromagnetic effects. ITECCS develops and validates these models for engineering and scientific applications."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When should a company consider CFD or FEA consulting?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Companies typically seek CFD or FEA consulting when internal teams lack specialized expertise, when models need rigorous validation, when simulations must scale on HPC infrastructure, or when translating research methods into production workflows."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is digital twin consulting?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Digital twin consulting involves integrating physics-based models, real-time data, and AI-based inference to create predictive virtual replicas of physical systems. ITECCS helps design and validate digital twin architectures for engineering, energy, and industrial systems."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does ITECCS handle confidential or proprietary work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ITECCS operates under strict confidentiality. We can work under NDA, isolate client data and models, and deliver documented, reproducible workflows that clients can maintain internally."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    :root {
+      --ink: #0b1220;
+      --ink2: #0f172a;
+      --muted: #475569;
+      --brand: #0b2a5b;
+      --accent: #ffcc00;
+      --accent2: #f5b800;
+      --line: rgba(15,23,42,0.10);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      color: #0f172a;
+      background: #fff;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ========== NAVBAR ========== */
+    .navbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: #07101f;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      will-change: transform;
+    }
+
+    .navbar.nav-hidden { transform: translateY(-100%); }
+
+    .nav-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 32px;
+      height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .logo img { height: 40px; width: auto; display: block; transition: transform .2s ease; }
+    .logo:hover img { transform: scale(1.04); }
+
+    .nav-links {
+      display: flex; align-items: center; gap: 4px;
+      list-style: none; margin: 0; padding: 0;
+      flex: 1; justify-content: flex-end;
+    }
+
+    .nav-links > li { position: relative; }
+
+    .nav-links a {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 10px 14px;
+      font-size: 0.92rem; font-weight: 600;
+      color: rgba(255,255,255,0.78);
+      text-decoration: none;
+      transition: color 0.2s ease;
+      position: relative;
+    }
+
+    .nav-links > li > a:not(.contact-nav-button) { background: transparent !important; }
+
+    .nav-links > li > a:not(.contact-nav-button)::after {
+      content: "";
+      position: absolute;
+      left: 14px; right: 14px; bottom: 2px;
+      height: 2px;
+      background: #ffcc00;
+      border-radius: 999px;
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .nav-links > li > a:not(.contact-nav-button):hover,
+    .nav-links > li > a:not(.contact-nav-button):focus {
+      color: #ffffff !important;
+      background: transparent !important;
+      outline: none;
+    }
+
+    .nav-links > li > a:not(.contact-nav-button):hover::after,
+    .nav-links > li > a:not(.contact-nav-button):focus::after {
+      transform: scaleX(1);
+    }
+
+    .nav-links > li > a.active-page { color: #ffcc00 !important; }
+    .nav-links > li > a.active-page::after { transform: scaleX(1); }
+
+    .nav-sep {
+      width: 1px; height: 22px;
+      background: rgba(255,255,255,0.16);
+      margin: 0 10px; align-self: center;
+    }
+
+    .nav-links > li > a.right-link { color: rgba(255,255,255,0.72); }
+    .nav-links > li > a.right-link:hover { color: #ffcc00; }
+
+    a.contact-nav-button {
+      margin-left: 8px !important;
+      padding: 10px 20px !important;
+      border-radius: 10px !important;
+      background: #ffcc00 !important;
+      color: #0b1220 !important;
+      font-weight: 800 !important;
+      transition: all 0.2s ease !important;
+      box-shadow: 0 6px 18px rgba(255, 204, 0, 0.18);
+    }
+
+    a.contact-nav-button i { color: #0b1220 !important; font-size: 0.9rem; }
+
+    a.contact-nav-button:hover {
+      background: #f5b800 !important;
+      color: #0b1220 !important;
+      transform: translateY(-1px);
+      box-shadow: 0 10px 24px rgba(255, 204, 0, 0.28);
+    }
+
+    a.contact-nav-button::after { display: none !important; }
+
+    .nav-toggle {
+      display: none;
+      width: 40px; height: 40px;
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 8px;
+      background: transparent;
+      cursor: pointer;
+      padding: 0;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+    }
+
+    .nav-toggle span {
+      display: block; width: 16px; height: 2px;
+      margin: 0 auto; background: #fff;
+      transition: all 0.3s ease;
+    }
+
+    .nav-spacer { height: 68px; display: block; }
+
+    @media (max-width: 1024px) {
+      .nav-inner { padding: 0 18px; height: 62px; }
+      .nav-spacer { height: 62px; }
+      .nav-toggle { display: flex; }
+
+      .nav-links {
+        position: fixed;
+        top: 62px; left: 0; right: 0; bottom: 0;
+        background: rgba(7, 16, 31, 0.98);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        flex-direction: column;
+        align-items: stretch; gap: 0;
+        padding: 18px 0 40px;
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+        transform: translateX(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition:
+          transform 0.42s cubic-bezier(0.4, 0, 0.2, 1),
+          opacity 0.28s ease,
+          visibility 0s linear 0.42s;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior: contain;
+      }
+
+      .nav-links.active {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        transition:
+          transform 0.42s cubic-bezier(0.4, 0, 0.2, 1),
+          opacity 0.28s ease,
+          visibility 0s;
+      }
+
+      .nav-links > li {
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+        opacity: 0; transform: translateX(-14px);
+        transition: opacity 0.32s ease, transform 0.32s ease;
+      }
+
+      .nav-links.active > li { opacity: 1; transform: translateX(0); }
+
+      .nav-links.active > li:nth-child(1) { transition-delay: 0.06s; }
+      .nav-links.active > li:nth-child(2) { transition-delay: 0.10s; }
+      .nav-links.active > li:nth-child(3) { transition-delay: 0.14s; }
+      .nav-links.active > li:nth-child(4) { transition-delay: 0.18s; }
+      .nav-links.active > li:nth-child(5) { transition-delay: 0.22s; }
+      .nav-links.active > li:nth-child(6) { transition-delay: 0.26s; }
+      .nav-links.active > li:nth-child(7) { transition-delay: 0.30s; }
+      .nav-links.active > li:nth-child(8) { transition-delay: 0.34s; }
+
+      .nav-links a {
+        display: flex; align-items: center;
+        padding: 18px 24px;
+        font-size: 1.05rem;
+        font-weight: 650;
+        border-radius: 0;
+      }
+
+      .nav-links > li > a:not(.contact-nav-button)::after { display: none; }
+
+      .nav-links > li > a:not(.contact-nav-button):hover,
+      .nav-links > li > a:not(.contact-nav-button):active,
+      .nav-links > li > a.active-page {
+        color: #ffcc00 !important;
+        background: rgba(255, 204, 0, 0.06);
+        padding-left: 32px;
+      }
+
+      .nav-sep { display: none; }
+
+      a.contact-nav-button {
+        margin: 22px 24px 0 !important;
+        padding: 14px 20px !important;
+        justify-content: center;
+        text-align: center;
+        border-radius: 12px !important;
+        font-size: 1rem !important;
+        background: linear-gradient(135deg, #ffcc00, #f5b800) !important;
+      }
+
+      body.nav-open { overflow: hidden; }
+
+      .nav-toggle.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+      .nav-toggle.active span:nth-child(2) { opacity: 0; }
+      .nav-toggle.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    }
+
+    /* ========== HERO ========== */
+    .hero-modern {
+      position: relative;
+      height: 82vh;
+      min-height: 600px;
+      max-height: 820px;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+
+    .hero-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding: 0 24px 130px;
+    }
+
+    .hero-bg-modern {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -2;
+      display: block;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(900px 500px at 20% 15%, rgba(255,204,0,0.10), transparent 60%),
+        radial-gradient(760px 420px at 80% 10%, rgba(59,130,246,0.10), transparent 55%),
+        linear-gradient(135deg, rgba(2,6,23,0.35), rgba(2,6,23,0.15));
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    .hero-content-modern {
+      position: relative;
+      z-index: 2;
+      max-width: 1020px;
+      text-align: center;
+      color: #fff;
+      padding: 28px 30px 24px;
+      border-radius: 20px;
+      background: rgba(2, 6, 23, 0.14);
+      border: 1px solid rgba(255,255,255,0.18);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 18px 60px rgba(0,0,0,0.32);
+    }
+
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.10);
+      border: 1px solid rgba(255,255,255,0.14);
+      font-size: 0.88rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      margin-bottom: 16px;
+      color: rgba(255,255,255,0.94);
+    }
+
+    .hero-kicker i { color: #ffcc00; font-size: 0.9rem; }
+
+    .hero-heading {
+      font-size: clamp(1.75rem, 3vw, 2.35rem);
+      font-weight: 950;
+      line-height: 1.12;
+      letter-spacing: -0.02em;
+      margin: 0 0 14px;
+      color: #fff;
+      text-shadow: 0 12px 40px rgba(0,0,0,0.35);
+    }
+
+    .hero-sub {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: rgba(255,255,255,0.92);
+      margin: 0 auto;
+      max-width: 880px;
+    }
+
+    /* ========== SEPARATOR ========== */
+    .hero-separator {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 24px;
+      margin: 0;
+      background: #fff;
+    }
+
+    .hero-separator-line {
+      height: 3px;
+      width: 100%;
+      max-width: 220px;
+      background: linear-gradient(90deg, transparent, #ffcc00, #f5b800, #ffcc00, transparent);
+      border-radius: 999px;
+    }
+
+    /* ========== MAIN CONTENT ========== */
+    .content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+
+    .intro-section { margin: 0 0 60px; }
+    .intro-content { max-width: 1000px; margin: 0 auto; }
+
+    .intro-content h1 {
+      font-size: clamp(1.8rem, 3vw, 2.3rem);
+      font-weight: 950;
+      letter-spacing: -0.02em;
+      color: #0f172a;
+      margin: 0 0 20px;
+      text-align: center;
+    }
+
+    .intro-text {
+      font-size: 1.08rem;
+      color: #334155;
+      line-height: 1.85;
+      font-weight: 500;
+      margin: 0 0 30px;
+    }
+
+    .intro-text a {
+      color: #0b2a5b;
+      font-weight: 700;
+      text-decoration: none;
+      border-bottom: 2px solid rgba(11,42,91,0.20);
+      transition: border-color .2s ease;
+    }
+
+    .intro-text a:hover { border-color: #ffcc00; }
+
+    .intro-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin: 30px 0;
+    }
+
+    .intro-item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 22px 20px;
+      background: #f8fafc;
+      border-radius: 14px;
+      border-left: 4px solid #ffcc00;
+      height: 100%;
+    }
+
+    .intro-item i {
+      font-size: 22px;
+      color: #0b2a5b;
+      flex-shrink: 0;
+    }
+
+    .intro-item p {
+      margin: 0;
+      font-size: 0.98rem;
+      color: #334155;
+      line-height: 1.7;
+      font-weight: 500;
+    }
+
+    .intro-item strong {
+      color: #0f172a;
+      font-weight: 800;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    @media (max-width: 900px) {
+      .intro-list { grid-template-columns: 1fr; }
+    }
+
+    .intro-footer {
+      font-size: 1.05rem;
+      color: #334155;
+      line-height: 1.85;
+      font-weight: 500;
+      margin: 30px 0 0;
+      padding-top: 24px;
+      border-top: 1px solid rgba(15,23,42,0.08);
+    }
+
+    /* ========== DEEP ON-PAGE ========== */
+    .consulting-topics { margin: 60px 0 0; }
+
+    .consulting-topics-header {
+      text-align: center;
+      max-width: 880px;
+      margin: 0 auto 36px;
+    }
+
+    .consulting-topics-header h2 {
+      font-size: clamp(1.5rem, 2.5vw, 2rem);
+      font-weight: 950;
+      color: #0f172a;
+      letter-spacing: -0.02em;
+      margin: 0 0 14px;
+    }
+
+    .consulting-topics-header p {
+      font-size: 1.03rem;
+      color: #475569;
+      line-height: 1.8;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    .consulting-topic-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .consulting-topic-card {
+      background: #fff;
+      border: 1px solid rgba(15,23,42,0.10);
+      border-radius: 18px;
+      padding: 26px 24px;
+      box-shadow: 0 12px 30px rgba(2,6,23,0.06);
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+
+    .consulting-topic-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 44px rgba(2,6,23,0.10);
+    }
+
+    .consulting-topic-card h3 {
+      font-size: 1.15rem;
+      font-weight: 950;
+      color: #0b2a5b;
+      margin: 0 0 12px;
+      letter-spacing: -0.01em;
+    }
+
+    .consulting-topic-card p {
+      font-size: 0.98rem;
+      color: #475569;
+      line-height: 1.7;
+      font-weight: 500;
+      margin: 0 0 14px;
+    }
+
+    .consulting-topic-card ul {
+      margin: 0 0 16px;
+      padding-left: 20px;
+      color: #334155;
+      font-size: 0.95rem;
+      line-height: 1.75;
+      font-weight: 500;
+    }
+
+    .consulting-topic-card li { margin: 0 0 6px; }
+
+    .consulting-topic-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 800;
+      color: #0b2a5b;
+      text-decoration: none;
+      font-size: 0.93rem;
+      transition: color .2s ease;
+    }
+
+    .consulting-topic-link:hover { color: #f5b800; }
+    .consulting-topic-link i { transition: transform .2s ease; font-size: 0.8rem; }
+    .consulting-topic-link:hover i { transform: translateX(4px); }
+
+    @media (max-width: 900px) {
+      .consulting-topic-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ========== PROGRAM CARDS ========== */
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin: 60px 0 0;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid rgba(15,23,42,0.10);
+      border-radius: 16px;
+      padding: 26px 20px;
+      text-decoration: none;
+      color: inherit;
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+      box-shadow: 0 10px 26px rgba(2,6,23,0.06);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 46px rgba(2,6,23,0.12);
+      border-color: rgba(255,204,0,0.35);
+    }
+
+    .card i {
+      display: block;
+      margin-bottom: 14px;
+      font-size: 1.7rem;
+    }
+
+    .card h2 {
+      font-size: 1rem;
+      font-weight: 950;
+      color: #0f172a;
+      letter-spacing: -0.01em;
+      margin: 0 0 10px;
+      line-height: 1.3;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: #64748b;
+      line-height: 1.6;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    @media (max-width: 900px) {
+      .card-container { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 500px) {
+      .card-container { grid-template-columns: 1fr; }
+    }
+
+    /* ========== FAQ SECTION ========== */
+    .faq-section {
+      margin: 70px 0 0;
+      max-width: 880px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .faq-header {
+      text-align: center;
+      margin: 0 0 36px;
+    }
+
+    .faq-header h2 {
+      font-size: clamp(1.5rem, 2.5vw, 2rem);
+      font-weight: 950;
+      color: #0f172a;
+      letter-spacing: -0.02em;
+      margin: 0 0 12px;
+    }
+
+    .faq-header p {
+      font-size: 1.03rem;
+      color: #475569;
+      line-height: 1.8;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid rgba(15,23,42,0.10);
+    }
+
+    .faq-item:first-of-type {
+      border-top: 1px solid rgba(15,23,42,0.10);
+    }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 22px 4px;
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      font-family: inherit;
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: #0f172a;
+      transition: color .2s ease;
+    }
+
+    .faq-question:hover { color: #0b2a5b; }
+
+    .faq-question i {
+      flex-shrink: 0;
+      color: #ffcc00;
+      font-size: 0.85rem;
+      transition: transform .3s ease;
+    }
+
+    .faq-item.open .faq-question i {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 500px;
+    }
+
+    .faq-answer-inner {
+      padding: 0 4px 22px;
+      font-size: 1rem;
+      color: #475569;
+      line-height: 1.8;
+      font-weight: 500;
+    }
+
+    /* ========== CTA BAND ========== */
+    .consulting-cta-band {
+      margin: 60px 0 0;
+      padding: 40px 32px;
+      border-radius: 22px;
+      background: linear-gradient(135deg, #07101f, #0b2a5b);
+      color: #fff;
+      text-align: center;
+      box-shadow: 0 24px 60px rgba(2,6,23,0.20);
+    }
+
+    .consulting-cta-band h2 {
+      font-size: clamp(1.4rem, 2.2vw, 1.9rem);
+      font-weight: 950;
+      letter-spacing: -0.02em;
+      margin: 0 0 12px;
+      color: #fff;
+    }
+
+    .consulting-cta-band p {
+      color: rgba(255,255,255,0.90);
+      max-width: 640px;
+      margin: 0 auto 24px;
+      font-size: 1.03rem;
+      line-height: 1.75;
+    }
+
+    .consulting-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 28px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #ffcc00, #f5b800);
+      color: #182235;
+      font-weight: 900;
+      text-decoration: none;
+      box-shadow: 0 16px 34px rgba(255,204,0,0.24);
+      transition: transform .2s ease;
+    }
+
+    .consulting-cta-btn:hover { transform: translateY(-2px); }
+
+    @media (max-width: 600px) {
+      .hero-modern { height: 68vh; min-height: 500px; }
+      .hero-inner { padding: 0 18px 100px; }
+      .hero-content-modern { padding: 22px 18px 20px; }
+      .hero-separator { padding: 30px 18px; }
+      .content { padding: 0 18px 60px; }
+    }
+  </style>
 </head>
 
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="logo">
-      <img src="logo.webp" alt="ITECCS Logo">
-    </div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <img src="logggo-bg.png" alt="ITECCS Logo" width="140" height="40" loading="eager">
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="research.html">Research</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="consulting.html" class="active-page">Consulting</a></li>
+      <li><a href="about.html">About</a></li>
       <li><a href="founder.html">Who We Are</a></li>
-      <li><a href="program.html">Research & Innovation Programs</a></li>
-      <li><a href="education.html">Education & Professional Training</a></li>
-      <li><a href="consulting.html">Technical Advisory & Industry Collaboration</a></li>
-      <li><a href="howtopay.html">How to Pay</a></li>
+
+      <li class="nav-sep" aria-hidden="true"></li>
+
+      <li><a href="howtopay.html" class="right-link">How to Pay</a></li>
       <li>
         <a href="contact.html" class="contact-nav-button">
           <i class="fas fa-envelope"></i> Contact Us
         </a>
       </li>
     </ul>
-  </nav>
+  </div>
+</nav>
 
-  <!-- Hero Section -->
-  <section class="hero-modern">
+<div class="nav-spacer"></div>
+
+
+<!-- ========== HERO ========== -->
+<section class="hero-modern">
+  <div class="hero-inner">
     <div class="hero-overlay"></div>
-    <img src="consulting-bg.webp" alt="ITECCS Technical Advisory" class="hero-bg-modern" />
+    <img src="consulting-bg.webp" alt="ITECCS Technical Advisory — applied mathematics, AI, and scientific computing consulting" class="hero-bg-modern" />
 
     <div class="hero-content-modern">
+      <div class="hero-kicker">
+        <i class="fas fa-handshake"></i>
+        <span>Technical Advisory &amp; Industry Collaboration</span>
+      </div>
+
       <p class="hero-heading">Advanced Technical Advisory in Applied Mathematics, AI, and Scientific Computing</p>
 
       <p class="hero-sub">
-        Providing world-class scientific expertise, mathematical modeling, and AI-driven computational innovation to support
-        next-generation engineering systems, biomedical technologies, industrial research, and strategic technology development.
+        Providing world-class scientific expertise, mathematical modeling, and AI-driven computational
+        innovation to support next-generation engineering systems, biomedical technologies, industrial
+        research, and strategic technology development.
       </p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Main Content -->
-  <main class="content intro-content">
 
-    <section class="intro-section fade-in-up">
+<!-- ========== DETACHED SEPARATOR ========== -->
+<div class="hero-separator" aria-hidden="true">
+  <div class="hero-separator-line"></div>
+</div>
 
-      <div class="intro-content">
 
-        <h1>Technical Advisory & Industry Collaboration</h1>
+<main class="content">
 
-        <p class="intro-text">
-          The ITECCS Research Center provides internationally recognized expertise at the intersection of applied mathematics,
-          artificial intelligence, scientific computing, and advanced engineering simulation. Under the leadership of senior academic and
-          scientific experts, ITECCS collaborates with universities, industry leaders, research institutions, startups, and government
-          agencies to address complex scientific and technological challenges.
-          <br><br>
-          Our mission is to transform rigorous mathematical theory into deployable computational solutions that accelerate innovation,
-          enhance engineering performance, enable biomedical advances, and support strategic decision-making in science and technology.
+<!-- ========== INTRO ========== -->
+<section class="intro-section">
+  <div class="intro-content">
+    <h1>Technical Advisory &amp; Industry Collaboration</h1>
+
+    <p class="intro-text">
+      The ITECCS Research Center provides internationally recognized expertise at the intersection of
+      <a href="research.html">applied mathematics</a>, artificial intelligence,
+      <a href="research.html">scientific computing</a>, and advanced engineering simulation.
+      Under the leadership of senior academic and scientific experts, ITECCS collaborates with universities,
+      industry leaders, research institutions, startups, and government agencies to address complex
+      scientific and technological challenges.
+    </p>
+
+    <p class="intro-text">
+      Our mission is to transform rigorous mathematical theory into deployable computational solutions
+      that accelerate innovation, enhance engineering performance, enable biomedical advances, and support
+      strategic decision-making in science and technology. For a complete view of ITECCS's research portfolio,
+      visit our <a href="research.html">Research &amp; Innovation Programs</a> page.
+    </p>
+
+    <div class="intro-list">
+      <div class="intro-item">
+        <i class="fas fa-brain"></i>
+        <p>
+          <strong>Scientific Computing, AI, and Computational Modeling</strong>
+          Development of advanced simulation frameworks, AI-enhanced modeling, inverse problem solutions,
+          and high-fidelity computational systems.
         </p>
-
-
-        <p style="margin-top:14px;">
-  For a complete view of ITECCS’s research portfolio—including core themes, flagship initiatives, and active collaborations—visit our
-  <a href="https://iteccs.com/program" style="color:#2575fc; font-weight:700; text-decoration:none;">
-    Research & Innovation Programs
-  </a> page.
-</p>
-
-
-        <div class="intro-list">
-
-          <div class="intro-item">
-            <i class="fas fa-brain"></i>
-            <p>
-              <strong>Scientific Computing, AI, and Computational Modeling</strong><br>
-              Development of advanced simulation frameworks, AI-enhanced modeling, inverse problem solutions, and high-fidelity computational systems.
-            </p>
-          </div>
-
-          <div class="intro-item">
-            <i class="fas fa-square-root-alt"></i>
-            <p>
-              <strong>Advanced Applied Mathematics and Algorithm Development</strong><br>
-              Expertise in PDE modeling, numerical methods, optimization, inverse problems, and multiscale simulation for complex scientific and engineering systems.
-            </p>
-          </div>
-
-          <div class="intro-item">
-            <i class="fas fa-lightbulb"></i>
-            <p>
-              <strong>Technology Innovation and Research Translation</strong><br>
-              Translating fundamental research into deployable computational technologies, enabling next-generation solutions across engineering, healthcare, energy, and advanced technology sectors.
-            </p>
-          </div>
-
-        </div>
-
-
-        <p class="intro-footer">
-          ITECCS serves as a trusted technical advisory partner for institutions and organizations seeking scientific leadership,
-          advanced computational expertise, and strategic research collaboration to solve critical technological challenges and
-          enable long-term innovation.
-        </p>
-
       </div>
-
-    </section>
-
-
-    <!-- Technical Advisory Areas -->
-
-    <div class="card-container">
-
-      <a href="straining.html" class="card">
-        <i class="fas fa-microchip fa-2x" style="color:#2575fc;"></i>
-        <h2>Scientific Computing & HPC Advisory</h2>
+      <div class="intro-item">
+        <i class="fas fa-square-root-alt"></i>
         <p>
-          Advisory in high-performance computing, scalable simulation, GPU acceleration, and advanced numerical methods
-          for large-scale scientific and engineering applications.
+          <strong>Advanced Applied Mathematics and Algorithm Development</strong>
+          Expertise in PDE modeling, numerical methods, optimization, inverse problems, and multiscale
+          simulation for complex scientific and engineering systems.
         </p>
-      </a>
-
-
-      <a href="straining.html" class="card">
-        <i class="fas fa-gears fa-2x" style="color:#2575fc;"></i>
-        <h2>Engineering Simulation & Mathematical Modeling</h2>
+      </div>
+      <div class="intro-item">
+        <i class="fas fa-lightbulb"></i>
         <p>
-          Advanced modeling of multiphysics systems, fluid dynamics, porous media, and complex engineering processes using state-of-the-art computational methods.
+          <strong>Technology Innovation and Research Translation</strong>
+          Translating fundamental research into deployable computational technologies, enabling
+          next-generation solutions across engineering, healthcare, energy, and advanced technology sectors.
         </p>
-      </a>
-
-
-      <a href="straining.html" class="card">
-        <i class="fas fa-brain fa-2x" style="color:#2575fc;"></i>
-        <h2>AI, Machine Learning & Scientific Data Analysis</h2>
-        <p>
-          AI-driven modeling, inverse methods, predictive analytics, and scientific machine learning to enable intelligent decision-making and technological innovation.
-        </p>
-      </a>
-
-
-      <a href="consulting.html" class="card">
-        <i class="fas fa-handshake fa-2x" style="color:#2575fc;"></i>
-        <h2>Technical Advisory & Strategic Research Collaboration</h2>
-        <p>
-          Strategic technical advisory, research program development, grant collaboration, and scientific leadership supporting academic, industrial, and governmental innovation.
-        </p>
-      </a>
-
+      </div>
     </div>
 
+    <p class="intro-footer">
+      ITECCS serves as a trusted technical advisory partner for institutions and organizations seeking
+      scientific leadership, advanced computational expertise, and strategic research collaboration to solve
+      critical technological challenges and enable long-term innovation.
+    </p>
+  </div>
+</section>
 
 
-    <!-- Advisory in Action -->
+<!-- ========== DEEP ON-PAGE: CONSULTING SERVICES ========== -->
+<section class="consulting-topics">
+  <div class="consulting-topics-header">
+    <h2>Technical Advisory Services</h2>
+    <p>
+      ITECCS provides specialized consulting across the computational and engineering disciplines
+      most in demand in modern industry and research. Each service combines rigorous mathematics,
+      validated simulation, and deployment-ready engineering practice.
+    </p>
+  </div>
 
-    <section class="gallery-section fade-in-up">
+  <div class="consulting-topic-grid">
 
-      <h2>Technical Advisory in Action</h2>
-
-      <p class="gallery-subtitle">
-        Advancing science, engineering, and technology through applied mathematics, AI-driven innovation, and scientific computing expertise.
+    <div class="consulting-topic-card">
+      <h3>CFD &amp; FEA Consulting Services</h3>
+      <p>
+        Rigorous computational fluid dynamics (CFD) and finite element analysis (FEA) consulting for
+        engineering teams that need validated simulation, stability analysis, and reliable design insight.
       </p>
+      <ul>
+        <li>CFD consulting services for fluid flow, heat transfer, and multiphase systems</li>
+        <li>Finite element analysis consulting for structural, thermal, and coupled problems</li>
+        <li>Stability, convergence, and verification &amp; validation workflows</li>
+        <li>Model calibration against experimental or operational data</li>
+      </ul>
+      <a href="contact.html" class="consulting-topic-link">
+        Request CFD / FEA advisory <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+
+    <div class="consulting-topic-card">
+      <h3>Multiphysics Simulation Services</h3>
+      <p>
+        Advanced multiphysics simulation services for systems where fluid, thermal, structural,
+        and electromagnetic processes interact. We model the couplings that dominate real engineering behavior.
+      </p>
+      <ul>
+        <li>Multiphysics simulation and modeling</li>
+        <li>Coupled fluid-structure, thermal-structural, and reactive transport problems</li>
+        <li>Multiscale and porous-media transport modeling</li>
+        <li>High-fidelity simulation for design and safety assessment</li>
+      </ul>
+      <a href="contact.html" class="consulting-topic-link">
+        Discuss multiphysics projects <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+
+    <div class="consulting-topic-card">
+      <h3>HPC Consulting &amp; Scalable Computing</h3>
+      <p>
+        High-performance computing (HPC) consulting for teams that need simulation to scale on modern
+        parallel and GPU architectures, cloud platforms, and secure compute environments.
+      </p>
+      <ul>
+        <li>High performance computing consulting and architecture design</li>
+        <li>Parallel algorithms, GPU acceleration, and domain decomposition</li>
+        <li>Cloud and HPC deployment for large-scale simulation workflows</li>
+        <li>Performance profiling, memory efficiency, and reproducible pipelines</li>
+      </ul>
+      <a href="contact.html" class="consulting-topic-link">
+        Explore HPC advisory <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+
+    <div class="consulting-topic-card">
+      <h3>Digital Twins &amp; Scientific Machine Learning</h3>
+      <p>
+        Digital twin consulting and scientific machine learning for organizations building predictive,
+        data-informed computational systems that support real-time decisions and operations.
+      </p>
+      <ul>
+        <li>Digital twin consulting services and architecture design</li>
+        <li>Scientific machine learning consulting (SciML, PINNs, surrogates)</li>
+        <li>Real-time monitoring, forecasting, and optimization pipelines</li>
+        <li>Data-model integration and uncertainty-aware prediction</li>
+      </ul>
+      <a href="contact.html" class="consulting-topic-link">
+        Discuss digital twin projects <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+
+  </div>
+</section>
 
 
-      <div class="gallery-grid">
+<!-- ========== PROGRAM CARDS ========== -->
+<div class="card-container">
 
-        <div class="gallery-item">
-          <img src="lab-research.webp" alt="Computational Research">
-          <div class="gallery-overlay">AI & Scientific Computing Innovation</div>
+  <a href="research.html" class="card">
+    <i class="fas fa-flask" style="color:#2575fc;"></i>
+    <h2>Research Collaboration</h2>
+    <p>Joint research programs, grant collaboration, and interdisciplinary projects.</p>
+  </a>
+
+  <a href="straining.html" class="card">
+    <i class="fas fa-microchip" style="color:#2575fc;"></i>
+    <h2>Scientific Computing &amp; HPC</h2>
+    <p>Advisory in scalable simulation, GPU acceleration, and numerical methods.</p>
+  </a>
+
+  <a href="education.html" class="card">
+    <i class="fas fa-graduation-cap" style="color:#2575fc;"></i>
+    <h2>Training &amp; Workforce</h2>
+    <p>Custom training and workforce development for technical teams.</p>
+  </a>
+
+  <a href="contact.html" class="card">
+    <i class="fas fa-handshake" style="color:#2575fc;"></i>
+    <h2>Strategic Advisory</h2>
+    <p>Research-to-deployment partnerships and scientific leadership support.</p>
+  </a>
+
+</div>
+
+
+<!-- ========== FAQ SECTION ========== -->
+<section class="faq-section">
+  <div class="faq-header">
+    <h2>Frequently Asked Questions</h2>
+    <p>Common questions about ITECCS consulting and industry collaboration.</p>
+  </div>
+
+  <div class="faq-list">
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        What consulting services does ITECCS offer?
+        <i class="fas fa-chevron-down"></i>
+      </button>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">
+          ITECCS offers technical advisory in scientific computing, computational modeling, CFD consulting, finite element analysis (FEA) consulting, multiphysics simulation, high-performance computing (HPC), digital twin consulting, and scientific machine learning consulting.
         </div>
-
-        <div class="gallery-item">
-          <img src="team-meeting.jpg" alt="Technical Advisory Collaboration">
-          <div class="gallery-overlay">Strategic Technical Advisory</div>
-        </div>
-
-        <div class="gallery-item">
-          <img src="model.webp" alt="Engineering Modeling">
-          <div class="gallery-overlay">Engineering Simulation & Modeling</div>
-        </div>
-
-        <div class="gallery-item">
-          <img src="data-visualization.jpg" alt="Data Science">
-          <div class="gallery-overlay">Scientific Machine Learning & Data Analysis</div>
-        </div>
-
-        <div class="gallery-item">
-          <img src="innovation-lab.webp" alt="Innovation Lab">
-          <div class="gallery-overlay">Technology Innovation & Research Translation</div>
-        </div>
-
-        <div class="gallery-item">
-          <img src="presentation.webp" alt="Scientific Collaboration">
-          <div class="gallery-overlay">Academic, Industry & Government Partnerships</div>
-        </div>
-
       </div>
+    </div>
 
-    </section>
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        Who does ITECCS work with?
+        <i class="fas fa-chevron-down"></i>
+      </button>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">
+          ITECCS works with universities, research laboratories, industry R&amp;D teams, engineering firms, startups, and government agencies on technical advisory, computational modeling, and research-to-deployment projects.
+        </div>
+      </div>
+    </div>
 
-  </main>
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        What is multiphysics simulation consulting?
+        <i class="fas fa-chevron-down"></i>
+      </button>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">
+          Multiphysics simulation consulting involves modeling systems where multiple physical processes interact, such as fluid flow, heat transfer, structural deformation, and electromagnetic effects. ITECCS develops and validates these models for engineering and scientific applications.
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        When should a company consider CFD or FEA consulting?
+        <i class="fas fa-chevron-down"></i>
+      </button>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">
+          Companies typically seek CFD or FEA consulting when internal teams lack specialized expertise, when models need rigorous validation, when simulations must scale on HPC infrastructure, or when translating research methods into production workflows.
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        What is digital twin consulting?
+        <i class="fas fa-chevron-down"></i>
+      </button>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">
+          Digital twin consulting involves integrating physics-based models, real-time data, and AI-based inference to create predictive virtual replicas of physical systems. ITECCS helps design and validate digital twin architectures for engineering, energy, and industrial systems.
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        How does ITECCS handle confidential or proprietary work?
+        <i class="fas fa-chevron-down"></i>
+      </button>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">
+          ITECCS operates under strict confidentiality. We can work under NDA, isolate client data and models, and deliver documented, reproducible workflows that clients can maintain internally.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 
+<!-- ========== CTA BAND ========== -->
+<section class="consulting-cta-band">
+  <h2>Let's discuss your technical challenge</h2>
+  <p>
+    Whether you need CFD, FEA, multiphysics, HPC, digital twin, or scientific machine learning advisory,
+    ITECCS can help translate rigorous computational methods into deployment-ready engineering solutions.
+  </p>
+  <a href="contact.html" class="consulting-cta-btn">
+    Request Consulting Info <i class="fas fa-arrow-right"></i>
+  </a>
+</section>
 
-  <!-- Footer -->
-
-  <footer>
-    <p>&copy; 2026 ITECCS. All rights reserved.</p>
-  </footer>
-
-
-
-  <!-- Scroll Reveal Animation -->
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const fadeElems = document.querySelectorAll(".fade-in-up");
-
-      const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.2 });
-
-      fadeElems.forEach(el => observer.observe(el));
-    });
-  </script>
+</main>
 
 
-
-  <!-- Custom Chat Button -->
-
-  <button id="custom-chat-btn">
-    <i class="fas fa-comments"></i>
-  </button>
+<footer>
+  <p>&copy; 2026 ITECCS. All rights reserved.</p>
+</footer>
 
 
+<button id="custom-chat-btn" aria-label="Open chat">
+  <i class="fas fa-comments"></i>
+</button>
 
-  <!-- Tawk.to Script -->
 
-  <script type="text/javascript">
+<!-- Tawk.to -->
+<script type="text/javascript">
+  var Tawk_API = Tawk_API || {};
+  var Tawk_LoadStart = new Date();
 
-    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+  (function(){
+    var s1=document.createElement("script"),
+        s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/685e2123390063190e54b4b2/1iunr2sv2';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+  })();
 
-    (function(){
-      var s1=document.createElement("script"),
-      s0=document.getElementsByTagName("script")[0];
+  Tawk_API.onLoad = function(){ Tawk_API.hideWidget(); };
 
-      s1.async=true;
-      s1.src='https://embed.tawk.to/685e2123390063190e54b4b2/1iunr2sv2';
-      s1.charset='UTF-8';
-      s1.setAttribute('crossorigin','*');
+  document.addEventListener("DOMContentLoaded", function(){
+    var btn = document.getElementById("custom-chat-btn");
+    if(btn){
+      btn.addEventListener("click", function(){
+        if(typeof Tawk_API !== "undefined"){ Tawk_API.maximize(); }
+      });
+    }
+  });
+</script>
 
-      s0.parentNode.insertBefore(s1,s0);
-    })();
 
-    Tawk_API.onLoad = function(){ Tawk_API.hideWidget(); };
+<script>
+(function () {
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  if (!navToggle || !navLinks) return;
 
-    document.addEventListener("DOMContentLoaded", function(){
+  function openMenu() {
+    navToggle.classList.add('active');
+    navLinks.classList.add('active');
+    navToggle.setAttribute('aria-expanded', 'true');
+    document.body.classList.add('nav-open');
+  }
 
-      var btn = document.getElementById("custom-chat-btn");
+  function closeMenu() {
+    navToggle.classList.remove('active');
+    navLinks.classList.remove('active');
+    navToggle.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('nav-open');
+  }
 
-      if(btn){
-        btn.addEventListener("click", function(){
+  navToggle.addEventListener('click', () => {
+    if (navLinks.classList.contains('active')) closeMenu();
+    else openMenu();
+  });
 
-          if(typeof Tawk_API !== "undefined"){
-            Tawk_API.maximize();
-          }
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
 
-        });
+  document.addEventListener('click', (e) => {
+    if (!navLinks.classList.contains('active')) return;
+    if (!navLinks.contains(e.target) && !navToggle.contains(e.target)) {
+      closeMenu();
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navLinks.classList.contains('active')) {
+      closeMenu();
+    }
+  });
+
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      if (window.innerWidth > 1024 && navLinks.classList.contains('active')) {
+        closeMenu();
       }
+    }, 150);
+  });
+})();
+</script>
 
+
+<!-- Navbar hide/show on scroll -->
+<script>
+(function () {
+  const navbar = document.getElementById('navbar');
+  if (!navbar) return;
+
+  let lastScrollY = window.scrollY;
+  let ticking = false;
+  const NAV_HEIGHT = 100;
+  const SCROLL_DELTA = 6;
+
+  function updateNavbar() {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY < NAV_HEIGHT) {
+      navbar.classList.remove('nav-hidden');
+    }
+    else if (currentScrollY > lastScrollY + SCROLL_DELTA) {
+      navbar.classList.add('nav-hidden');
+    }
+    else if (currentScrollY < lastScrollY - SCROLL_DELTA) {
+      navbar.classList.remove('nav-hidden');
+    }
+
+    lastScrollY = currentScrollY;
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      window.requestAnimationFrame(updateNavbar);
+      ticking = true;
+    }
+  }, { passive: true });
+})();
+</script>
+
+
+<!-- FAQ accordion -->
+<script>
+(function () {
+  const items = document.querySelectorAll('.faq-item');
+  items.forEach(item => {
+    const btn = item.querySelector('.faq-question');
+    btn.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      items.forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
     });
-
-  </script>
-
+  });
+})();
+</script>
 
 </body>
 </html>
