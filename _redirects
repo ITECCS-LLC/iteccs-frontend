@@ -1,2 +1,5 @@
 / /index.html 200
 /coreservices /consulting 301
+/program /research 301
+/program/ /research 301
+/program.html /research 301
