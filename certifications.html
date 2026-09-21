@@ -3,23 +3,37 @@
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T85X67KT5F"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T85X67KT5F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T85X67KT5F');
+  </script>
 
-  gtag('config', 'G-T85X67KT5F');
-</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - ITeccs</title>
+
+  <title>Professional Certifications | ITECCS AI, Scientific Computing & Engineering</title>
+  <meta name="description" content="Professional certifications from ITECCS in AI, data science, scientific computing, engineering, and applied mathematics. Advance your career with recognized credentials.">
+  <link rel="canonical" href="https://iteccs.com/certifications" />
+
+  <meta property="og:title" content="Professional Certifications | ITECCS" />
+  <meta property="og:description" content="Professional certifications from ITECCS in AI, data science, scientific computing, and engineering." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://iteccs.com/certifications" />
+  <meta property="og:image" content="https://iteccs.com/certifications.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Professional Certifications | ITECCS" />
+  <meta name="twitter:description" content="Professional certifications from ITECCS in AI, data science, scientific computing, and engineering." />
+  <meta name="twitter:image" content="https://iteccs.com/certifications.jpg" />
+
   <link rel="stylesheet" href="style.css">
-  <!-- Fonts and Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
   <!-- Navbar -->
   <nav class="navbar">
@@ -31,9 +45,8 @@
       <li><a href="about.html">About Us</a></li>
       <li><a href="founder.html">Who We Are</a></li>
       <li><a href="research.html">Research & Innovation Programs</a></li>
-     
       <li><a href="education.html">Education & Professional Training</a></li>
-       <li><a href="consulting.html">Industry Collaboration & Technical Advisory</a></li>
+      <li><a href="consulting.html">Industry Collaboration & Technical Advisory</a></li>
       <li><a href="howtopay.html">How to Pay</a></li>
       <li>
         <a href="contact.html" class="contact-nav-button">
@@ -45,27 +58,34 @@
 
   <main class="content">
     <h1 class="fade-in-up">Online Certificate Programs</h1>
+
     <div class="card-container">
+
       <a href="" class="card">
         <i class="fas fa-book-open fa-2x" style="color: #2575fc;"></i>
         <h2>Data Science & Big Data</h2>
         <p>TBD</p>
       </a>
+
       <a href="" class="card">
         <i class="fas fa-book-open fa-2x" style="color: #2575fc;"></i>
         <h2>Cloud Computing & DevOps</h2>
         <p>TBD</p>
       </a>
+
       <a href="" class="card">
         <i class="fas fa-book-open fa-2x" style="color: #2575fc;"></i>
         <h2>Applied & Computational Mathematics</h2>
         <p>TBD</p>
       </a>
+
       <a href="" class="card">
         <i class="fas fa-book-open fa-2x" style="color: #2575fc;"></i>
         <h2>Engineering</h2>
         <p>TBD</p>
       </a>
+
+    </div>
   </main>
 
   <!-- Footer -->
@@ -78,7 +98,7 @@
     <i class="fas fa-comments"></i>
   </button>
 
-   <!-- Tawk.to Script -->
+  <!-- Tawk.to Script -->
   <script type="text/javascript">
     var Tawk_API = Tawk_API || {};
     var Tawk_LoadStart = new Date();
@@ -93,60 +113,19 @@
       s0.parentNode.insertBefore(s1,s0);
     })();
 
-    // Hide default widget once fully loaded
     Tawk_API.onLoad = function(){
       Tawk_API.hideWidget();
     };
 
-    // Custom button opens chat
     document.addEventListener("DOMContentLoaded", function(){
       var btn = document.getElementById("custom-chat-btn");
       if(btn){
         btn.addEventListener("click", function(){
           if(typeof Tawk_API !== "undefined"){
-            Tawk_API.maximize(); // open chat window
+            Tawk_API.maximize();
           }
         });
       }
-    });
-  </script>
-  <!-- End of Tawk.to Script -->        
-
-  <!-- Embedded Animations -->
-  <script>
-    // Scroll reveal effect
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
-      });
-    }, { threshold: 0.15 });
-
-    document.querySelectorAll('.track-card, .section-title').forEach(el => observer.observe(el));
-
-    // 3D tilt effect
-    const tiltCards = document.querySelectorAll('.track-card');
-    tiltCards.forEach(card => {
-      card.addEventListener('mousemove', (e) => {
-        const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        const rotateY = ((x / rect.width) - 0.5) * 12;
-        const rotateX = ((y / rect.height) - 0.5) * -12;
-        card.style.transform = `rotateY(${rotateY}deg) rotateX(${rotateX}deg) scale(1.03)`;
-      });
-      card.addEventListener('mouseleave', () => {
-        card.style.transform = '';
-      });
-    });
-
-    // Subtle gradient animation
-    document.addEventListener('DOMContentLoaded', () => {
-      const bg = document.querySelector('.animated-bg');
-      let angle = 0;
-      setInterval(() => {
-        angle = (angle + 0.3) % 360;
-        bg.style.background = `linear-gradient(${angle}deg, #1e1f5b, #6a11cb, #2575fc)`;
-      }, 80);
     });
   </script>
 </body>
