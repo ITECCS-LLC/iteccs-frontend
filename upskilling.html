@@ -3,37 +3,50 @@
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T85X67KT5F"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T85X67KT5F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T85X67KT5F');
+  </script>
 
-  gtag('config', 'G-T85X67KT5F');
-</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Upskilling</title>
+
+  <title>Upskilling, Reskilling & Lifelong Learning | ITECCS</title>
+  <meta name="description" content="ITECCS upskilling and reskilling programs: professional education, customized industry training, bootcamps, stackable career pathways, and flexible learning for AI and advanced engineering.">
+  <link rel="canonical" href="https://iteccs.com/upskilling" />
+
+  <meta property="og:title" content="Upskilling, Reskilling & Lifelong Learning | ITECCS" />
+  <meta property="og:description" content="Professional education, customized industry training, bootcamps, stackable career pathways, and flexible learning for AI and advanced engineering." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://iteccs.com/upskilling" />
+  <meta property="og:site_name" content="ITECCS" />
+  <meta property="og:image" content="https://iteccs.com/upskilling-hero.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Upskilling, Reskilling & Lifelong Learning | ITECCS" />
+  <meta name="twitter:description" content="Professional education, customized industry training, bootcamps, stackable career pathways, and flexible learning." />
+  <meta name="twitter:image" content="https://iteccs.com/upskilling-hero.jpg" />
+
   <link rel="stylesheet" href="style.css">
-  <!-- Fonts and Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-
   <nav class="navbar">
     <div class="logo">
-      <img src="logo.webp" alt="ITeccs Logo">
+      <img src="logggo-bg.png" alt="ITECCS Logo">
     </div>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
       <li><a href="founder.html">Who We Are</a></li>
       <li><a href="research.html">Research & Innovation Programs</a></li>
-     
       <li><a href="education.html">Education & Professional Training</a></li>
-       <li><a href="consulting.html">Industry Collaboration & Technical Advisory</a></li>
+      <li><a href="consulting.html">Industry Collaboration & Technical Advisory</a></li>
       <li><a href="howtopay.html">How to Pay</a></li>
       <li>
         <a href="contact.html" class="contact-nav-button">
@@ -43,11 +56,9 @@
     </ul>
   </nav>
 
-  
-
   <!-- Hero Modern -->
     <section class="hero-modern">
-      <img src="upskilling-hero.jpg" class="hero-bg-modern" alt="Upskilling Background">
+      <img src="upskilling-hero.jpg" class="hero-bg-modern" alt="ITECCS Upskilling and Lifelong Learning Programs">
       <div class="hero-overlay"></div>
 
       <div class="hero-content-modern">
@@ -58,6 +69,7 @@
         </p>
       </div>
     </section>
+
 <main class="content">
       <section class="upskill-practice-cards">
   <div class="card-grid">
@@ -77,7 +89,7 @@
       </div>
       <h3>Customized Industry & Government Training</h3>
       <p>Tailored workshops in HPC, digital twins, AI-enabled design, and advanced simulation.</p>
-      <a href="#" class="learn-more">Learn more</a>
+      <a href="contact.html" class="learn-more">Learn more</a>
     </div>
 
     <div class="practice-card">
@@ -111,7 +123,7 @@
 </main>
 
   <footer>
-    <p>&copy; 2025 ITeccs. All rights reserved.</p>
+    <p>&copy; 2026 ITECCS. All rights reserved.</p>
   </footer>
   <!-- Custom Chat Button -->
   <button id="custom-chat-btn">
@@ -133,24 +145,22 @@
       s0.parentNode.insertBefore(s1,s0);
     })();
 
-    // Hide default widget once fully loaded
     Tawk_API.onLoad = function(){
       Tawk_API.hideWidget();
     };
 
-    // Custom button opens chat
     document.addEventListener("DOMContentLoaded", function(){
       var btn = document.getElementById("custom-chat-btn");
       if(btn){
         btn.addEventListener("click", function(){
           if(typeof Tawk_API !== "undefined"){
-            Tawk_API.maximize(); // open chat window
+            Tawk_API.maximize();
           }
         });
       }
     });
   </script>
-  <!-- End of Tawk.to Script -->  
+
    <script>
 // =====================
 // CARD ANIMATIONS
@@ -193,36 +203,41 @@ cards.forEach(card => {
 
   // Icon pulse glow
   const icon = card.querySelector('.card-icon-circle i');
-  let glow = 0;
-  let dir = 1;
-  function pulse() {
-    glow += dir * 0.5;
-    if (glow > 10 || glow < 0) dir *= -1;
-    icon.style.textShadow = `0 0 ${glow}px rgba(0,114,206,0.7)`;
-    requestAnimationFrame(pulse);
+  if (icon) {
+    let glow = 0;
+    let dir = 1;
+    function pulse() {
+      glow += dir * 0.5;
+      if (glow > 10 || glow < 0) dir *= -1;
+      icon.style.textShadow = `0 0 ${glow}px rgba(0,114,206,0.7)`;
+      requestAnimationFrame(pulse);
+    }
+    pulse();
   }
-  pulse();
 });
 
 // =====================
 // HERO PARALLAX BACKGROUND
 // =====================
 const heroBg = document.querySelector('.hero-bg-modern');
-document.addEventListener('mousemove', e => {
-  const x = (e.clientX / window.innerWidth - 0.5) * 10; // ±5px
-  const y = (e.clientY / window.innerHeight - 0.5) * 10; // ±5px
-  heroBg.style.transform = `translate(${x}px, ${y}px) scale(1.05)`;
-});
+if (heroBg) {
+  document.addEventListener('mousemove', e => {
+    const x = (e.clientX / window.innerWidth - 0.5) * 10;
+    const y = (e.clientY / window.innerHeight - 0.5) * 10;
+    heroBg.style.transform = `translate(${x}px, ${y}px) scale(1.05)`;
+  });
+}
 
 // =====================
 // SMOOTH SCROLL FOR ANCHOR LINKS
 // =====================
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
   });
 });
 </script>      

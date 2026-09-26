@@ -14,9 +14,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Contact ITECCS | Institute of Technology, Engineering, Computing, and Computational Sciences</title>
+<meta name="description" content="Contact ITECCS for research collaboration, technical advisory, AI, CFD, and scientific computing programs. Partner with a globally advancing institute delivering elite computational science innovation.">
+<link rel="canonical" href="https://iteccs.com/contact" />
 
-<meta name="description"
-content="Contact ITECCS for research collaboration, technical advisory, AI, CFD, and scientific computing programs. Partner with a globally advancing institute delivering elite computational science innovation.">
+<meta property="og:title" content="Contact ITECCS" />
+<meta property="og:description" content="Contact ITECCS for research collaboration, technical advisory, AI, CFD, and scientific computing programs." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://iteccs.com/contact" />
+<meta property="og:site_name" content="ITECCS" />
+<meta property="og:image" content="https://iteccs.com/logggo-bg.png" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Contact ITECCS" />
+<meta name="twitter:description" content="Contact ITECCS for research collaboration, technical advisory, AI, CFD, and scientific computing programs." />
+<meta name="twitter:image" content="https://iteccs.com/logggo-bg.png" />
 
 <link rel="stylesheet" href="style.css">
 
@@ -26,6 +37,298 @@ content="Contact ITECCS for research collaboration, technical advisory, AI, CFD,
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
+
+/* ========== PREMIUM NAVBAR ========== */
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  background: #07101f;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.navbar.nav-hidden { transform: translateY(-100%); }
+
+.nav-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.logo:hover img {
+  transform: scale(1.04);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.nav-links > li {
+  position: relative;
+}
+
+.nav-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.78);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  position: relative;
+}
+
+.nav-links > li > a:not(.contact-nav-button) {
+  background: transparent !important;
+}
+
+.nav-links > li > a:not(.contact-nav-button)::after {
+  content: "";
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 2px;
+  height: 2px;
+  background: #ffcc00;
+  border-radius: 999px;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.nav-links > li > a:not(.contact-nav-button):hover,
+.nav-links > li > a:not(.contact-nav-button):focus {
+  color: #ffffff !important;
+  background: transparent !important;
+  outline: none;
+}
+
+.nav-links > li > a:not(.contact-nav-button):hover::after,
+.nav-links > li > a:not(.contact-nav-button):focus::after {
+  transform: scaleX(1);
+}
+
+.nav-links > li > a.active-page { color: #ffcc00 !important; }
+.nav-links > li > a.active-page::after { transform: scaleX(1); }
+
+.nav-sep {
+  width: 1px;
+  height: 22px;
+  background: rgba(255,255,255,0.16);
+  margin: 0 10px;
+  align-self: center;
+}
+
+.nav-links > li > a.right-link {
+  color: rgba(255,255,255,0.72);
+  padding: 10px 14px;
+}
+
+.nav-links > li > a.right-link:hover {
+  color: #ffcc00;
+}
+
+a.contact-nav-button {
+  margin-left: 8px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #ffcc00;
+  color: #0b1220;
+  font-weight: 800;
+  transition: all 0.2s ease;
+  box-shadow: 0 6px 18px rgba(255, 204, 0, 0.18);
+}
+a.contact-nav-button i {
+  color: #0b1220 !important;
+  font-size: 0.9rem;
+}
+
+a.contact-nav-button:hover {
+  background: #f5b800 !important;
+  color: #0b1220 !important;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(255, 204, 0, 0.28);
+}
+
+a.contact-nav-button::after {
+  display: none !important;
+}
+
+.nav-toggle {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 16px;
+  height: 2px;
+  margin: 0 auto;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.nav-spacer { height: 68px; display: block; }
+
+@media (max-width: 1024px) {
+  .nav-inner {
+    padding: 0 18px;
+    height: 62px;
+  }
+
+  .nav-spacer { height: 62px; }
+
+  .nav-toggle {
+    display: flex;
+    z-index: 10600;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 62px;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    height: calc(100dvh - 62px);
+    background: rgba(7, 16, 31, 0.98);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 18px 0 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      transform 0.42s cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 0.28s ease,
+      visibility 0s linear 0.42s;
+    overflow-y: auto;
+    will-change: transform, opacity;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    z-index: 10500;
+  }
+
+  .nav-links.active {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    transition:
+      transform 0.42s cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 0.28s ease,
+      visibility 0s;
+  }
+
+  .nav-links > li {
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    opacity: 0;
+    transform: translateX(-14px);
+    transition: opacity 0.32s ease, transform 0.32s ease;
+    position: relative;
+    z-index: 1;
+  }
+
+  .nav-links.active > li {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .nav-links.active > li:nth-child(1) { transition-delay: 0.06s; }
+  .nav-links.active > li:nth-child(2) { transition-delay: 0.10s; }
+  .nav-links.active > li:nth-child(3) { transition-delay: 0.14s; }
+  .nav-links.active > li:nth-child(4) { transition-delay: 0.18s; }
+  .nav-links.active > li:nth-child(5) { transition-delay: 0.22s; }
+  .nav-links.active > li:nth-child(6) { transition-delay: 0.26s; }
+  .nav-links.active > li:nth-child(7) { transition-delay: 0.30s; }
+  .nav-links.active > li:nth-child(8) { transition-delay: 0.34s; }
+
+  .nav-links a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 18px 24px;
+    font-size: 1.05rem;
+    font-weight: 650;
+    border-radius: 0;
+    transition: color 0.2s ease, background 0.2s ease, padding-left 0.25s ease;
+  }
+
+  .nav-links > li > a:not(.contact-nav-button)::after {
+    display: none;
+  }
+
+  .nav-links > li > a:not(.contact-nav-button):hover,
+  .nav-links > li > a:not(.contact-nav-button):active,
+  .nav-links > li > a.active-page {
+    color: #ffcc00 !important;
+    background: rgba(255, 204, 0, 0.06);
+    padding-left: 32px;
+  }
+
+  .nav-sep { display: none; }
+
+  a.contact-nav-button {
+    margin: 22px 24px 0;
+    padding: 14px 20px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 12px;
+    font-size: 1rem;
+    background: linear-gradient(135deg, #ffcc00, #f5b800);
+    color: #0b1220;
+    box-shadow: 0 12px 28px rgba(255, 204, 0, 0.22);
+  }
+  body.nav-open {
+    overflow: hidden;
+  }
+
+  .nav-toggle.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .nav-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .nav-toggle.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+}
+
   /* FIX HERO TEXT VISIBILITY */
 
 .contact-hero {
@@ -388,6 +691,42 @@ grid-template-columns:1fr;
 
 <body>
 
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <img src="logggo-bg.png" alt="ITECCS Logo" width="140" height="40" loading="eager">
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="research.html">Research</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="consulting.html">Consulting</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="founder.html">Who We Are</a></li>
+
+      <li class="nav-sep" aria-hidden="true"></li>
+
+      <li>
+        <a href="howtopay.html" class="right-link">How to Pay</a>
+      </li>
+      <li>
+        <a href="contact.html" class="contact-nav-button">
+          <i class="fas fa-envelope"></i> Contact Us
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="nav-spacer"></div>
+
 
 <!-- HERO -->
 
@@ -512,6 +851,101 @@ Send Message
 © 2026 ITECCS. All rights reserved.
 
 </footer>
+
+<!-- ========== NAVBAR SCRIPTS ========== -->
+<script>
+(function () {
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  if (!navToggle || !navLinks) return;
+
+  function openMenu() {
+    navToggle.classList.add('active');
+    navLinks.classList.add('active');
+    navToggle.setAttribute('aria-expanded', 'true');
+    document.body.classList.add('nav-open');
+  }
+
+  function closeMenu() {
+    navToggle.classList.remove('active');
+    navLinks.classList.remove('active');
+    navToggle.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('nav-open');
+  }
+
+  navToggle.addEventListener('click', () => {
+    if (navLinks.classList.contains('active')) closeMenu();
+    else openMenu();
+  });
+
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!navLinks.classList.contains('active')) return;
+    if (!navLinks.contains(e.target) && !navToggle.contains(e.target)) {
+      closeMenu();
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navLinks.classList.contains('active')) {
+      closeMenu();
+    }
+  });
+
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      if (window.innerWidth > 1024 && navLinks.classList.contains('active')) {
+        closeMenu();
+      }
+    }, 150);
+  });
+})();
+</script>
+
+<!-- Navbar hide/show on scroll -->
+<script>
+(function () {
+  const navbar = document.getElementById('navbar');
+  if (!navbar) return;
+  let lastScrollY = window.scrollY;
+  let ticking = false;
+  const NAV_HEIGHT = 100;
+  const SCROLL_DELTA = 6;
+
+  function updateNavbar() {
+    const currentScrollY = window.scrollY;
+
+    if (document.body.classList.contains('nav-open')) {
+      navbar.classList.remove('nav-hidden');
+      lastScrollY = currentScrollY;
+      ticking = false;
+      return;
+    }
+
+    if (currentScrollY < NAV_HEIGHT) {
+      navbar.classList.remove('nav-hidden');
+    } else if (currentScrollY > lastScrollY + SCROLL_DELTA) {
+      navbar.classList.add('nav-hidden');
+    } else if (currentScrollY < lastScrollY - SCROLL_DELTA) {
+      navbar.classList.remove('nav-hidden');
+    }
+    lastScrollY = currentScrollY;
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      window.requestAnimationFrame(updateNavbar);
+      ticking = true;
+    }
+  }, { passive: true });
+})();
+</script>
 
 
 <script>

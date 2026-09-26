@@ -1,24 +1,36 @@
-<!-- upskilling.html -->
+<!-- appliedmath.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T85X67KT5F"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T85X67KT5F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T85X67KT5F');
+  </script>
 
-  gtag('config', 'G-T85X67KT5F');
-</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Applied Physics Curriculum - ITeccs</title>
 
-  <!-- Styles -->
+  <title>Applied & Computational Mathematics Curriculum | ITECCS</title>
+  <meta name="description" content="ITECCS Applied & Computational Mathematics curriculum: mathematical modeling, numerical methods, scientific computing, optimization, and applied structures and theory.">
+  <link rel="canonical" href="https://iteccs.com/appliedmath" />
+
+  <meta property="og:title" content="Applied & Computational Mathematics Curriculum | ITECCS" />
+  <meta property="og:description" content="Mathematical modeling, numerical methods, scientific computing, optimization, and applied structures and theory." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://iteccs.com/appliedmath" />
+  <meta property="og:site_name" content="ITECCS" />
+  <meta property="og:image" content="https://iteccs.com/appliedmath.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Applied & Computational Mathematics Curriculum | ITECCS" />
+  <meta name="twitter:description" content="Mathematical modeling, numerical methods, scientific computing, optimization, and applied structures and theory." />
+  <meta name="twitter:image" content="https://iteccs.com/appliedmath.jpg" />
+
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Fonts and Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
@@ -26,16 +38,15 @@
   <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">
-      <img src="logo.webp" alt="ITeccs Logo">
+      <img src="logggo-bg.png" alt="ITECCS Logo">
     </div>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
       <li><a href="founder.html">Who We Are</a></li>
       <li><a href="research.html">Research & Innovation Programs</a></li>
-     
       <li><a href="education.html">Education & Professional Training</a></li>
-       <li><a href="consulting.html">Industry Collaboration & Technical Advisory</a></li>
+      <li><a href="consulting.html">Industry Collaboration & Technical Advisory</a></li>
       <li><a href="howtopay.html">How to Pay</a></li>
       <li>
         <a href="contact.html" class="contact-nav-button">
@@ -47,10 +58,10 @@
   <!-- Hero Modern -->
     <section class="hero-modern">
       <div class="hero-overlay"></div>
-      <img src="appliedmath.jpg" alt="Applied Math background" class="hero-bg-modern" />
+      <img src="appliedmath.jpg" alt="Applied and Computational Mathematics Curriculum" class="hero-bg-modern" />
       
       <div class="hero-content-modern">
-        <h2 class="hero-heading">Applied and Computational Mathematics</h2>
+        <h1 class="hero-heading">Applied and Computational Mathematics</h1>
         <p class="hero-sub">
           Master Applied & Computational Mathematics through modeling and computational methods, gaining practical skills
           to solve complex problems in science, engineering, and data-driven research.
@@ -134,7 +145,7 @@
 
    <!-- Footer -->
   <footer>
-    <p>&copy; 2025 ITeccs. All rights reserved.</p>
+    <p>&copy; 2026 ITECCS. All rights reserved.</p>
   </footer>
 
   <!-- Custom Chat Button -->
@@ -142,9 +153,39 @@
     <i class="fas fa-comments"></i>
   </button> 
 
+  <!-- Tawk.to Script -->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {};
+    var Tawk_LoadStart = new Date();
+
+    (function(){
+      var s1=document.createElement("script"),
+          s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/685e2123390063190e54b4b2/1iunr2sv2';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+    })();
+
+    Tawk_API.onLoad = function(){
+      Tawk_API.hideWidget();
+    };
+
+    document.addEventListener("DOMContentLoaded", function(){
+      var btn = document.getElementById("custom-chat-btn");
+      if(btn){
+        btn.addEventListener("click", function(){
+          if(typeof Tawk_API !== "undefined"){
+            Tawk_API.maximize();
+          }
+        });
+      }
+    });
+  </script>
+
   <!-- Embedded Animations -->
   <script>
-    // Scroll reveal effect
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) entry.target.classList.add('visible');
@@ -153,7 +194,6 @@
 
     document.querySelectorAll('.track-card, .section-title').forEach(el => observer.observe(el));
 
-    // 3D tilt effect
     const tiltCards = document.querySelectorAll('.track-card');
     tiltCards.forEach(card => {
       card.addEventListener('mousemove', (e) => {
@@ -169,9 +209,9 @@
       });
     });
 
-    // Subtle gradient animation
     document.addEventListener('DOMContentLoaded', () => {
       const bg = document.querySelector('.animated-bg');
+      if (!bg) return;
       let angle = 0;
       setInterval(() => {
         angle = (angle + 0.3) % 360;
@@ -179,6 +219,5 @@
       }, 80);
     });
   </script>
-  <!-- End of Tawk.to Script -->        
 </body>
 </html>

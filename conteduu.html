@@ -1,225 +1,998 @@
-<!-- program.html -->
+<!-- conteduu.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T85X67KT5F"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T85X67KT5F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T85X67KT5F');
+  </script>
 
-  gtag('config', 'G-T85X67KT5F');
-</script>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Research & Innovation Programs | ITECCS Institute for Applied Mathematics, AI & Scientific Computing</title>
+  <title>Continuing Education & Professional Development | ITECCS</title>
+  <meta name="description" content="ITECCS Continuing Education: professional certificates, CPE pathways, micro-credentials, corporate training, and flexible learning formats for engineers and researchers.">
+  <link rel="canonical" href="https://iteccs.com/conteduu" />
 
-<meta name="description" content="ITECCS advances applied mathematics, artificial intelligence, high-performance computing, inverse problems, fluid mechanics, porous media, renewable energy modeling, cybersecurity, and quantum technologies through research programs, professional education, and technical advisory." />
+  <meta property="og:title" content="Continuing Education & Professional Development | ITECCS" />
+  <meta property="og:description" content="Professional certificates, CPE pathways, micro-credentials, corporate training, and flexible learning formats." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://iteccs.com/conteduu" />
+  <meta property="og:site_name" content="ITECCS" />
+  <meta property="og:image" content="https://iteccs.com/education.jpg" />
 
-<link rel="stylesheet" href="style.css" />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Continuing Education & Professional Development | ITECCS" />
+  <meta name="twitter:description" content="Professional certificates, CPE pathways, micro-credentials, corporate training, and flexible learning formats." />
+  <meta name="twitter:image" content="https://iteccs.com/education.jpg" />
 
-<style>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-/* ================= HERO ================= */
+  <style>
+    :root {
+      --ink: #0b1220;
+      --ink2: #0f172a;
+      --muted: #475569;
+      --brand: #0b2a5b;
+      --accent: #ffcc00;
+      --accent2: #f5b800;
+      --line: rgba(15,23,42,0.10);
+    }
 
-.program-hero{
-  padding:80px 20px;
-  text-align:center;
-  background:linear-gradient(135deg,#0f172a,#1e3a8a);
-  color:white;
-}
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      color: #0f172a;
+      background: #fff;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
 
-.program-hero h1{
-  font-size:2.6rem;
-  font-weight:800;
-  margin-bottom:18px;
-}
+    /* ========== PREMIUM NAVBAR ========== */
+    .navbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: #07101f;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      will-change: transform;
+    }
+    .navbar.nav-hidden { transform: translateY(-100%); }
 
-.program-hero p{
-  max-width:900px;
-  margin:auto;
-  line-height:1.8;
-  font-size:1.1rem;
-  opacity:0.95;
-}
+    .nav-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 32px;
+      height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .logo img { height: 40px; width: auto; display: block; transition: transform .2s ease; }
+    .logo:hover img { transform: scale(1.04); }
 
-/* ================= CONTENT SECTION ================= */
+    .nav-links {
+      display: flex; align-items: center; gap: 4px;
+      list-style: none; margin: 0; padding: 0;
+      flex: 1; justify-content: flex-end;
+    }
+    .nav-links > li { position: relative; }
+    .nav-links a {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 10px 14px;
+      font-size: 0.92rem; font-weight: 600;
+      color: rgba(255,255,255,0.78);
+      text-decoration: none;
+      transition: color 0.2s ease;
+      position: relative;
+    }
+    .nav-links > li > a:not(.contact-nav-button) { background: transparent !important; }
+    .nav-links > li > a:not(.contact-nav-button)::after {
+      content: "";
+      position: absolute;
+      left: 14px; right: 14px; bottom: 2px;
+      height: 2px;
+      background: #ffcc00;
+      border-radius: 999px;
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .nav-links > li > a:not(.contact-nav-button):hover,
+    .nav-links > li > a:not(.contact-nav-button):focus {
+      color: #ffffff !important;
+      background: transparent !important;
+      outline: none;
+    }
+    .nav-links > li > a:not(.contact-nav-button):hover::after,
+    .nav-links > li > a:not(.contact-nav-button):focus::after {
+      transform: scaleX(1);
+    }
+    .nav-links > li > a.active-page { color: #ffcc00 !important; }
+    .nav-links > li > a.active-page::after { transform: scaleX(1); }
 
-.program-section{
-  padding:70px 20px;
-  background:#f8fafc;
-  text-align:center;
-}
+    .nav-sep {
+      width: 1px; height: 22px;
+      background: rgba(255,255,255,0.16);
+      margin: 0 10px; align-self: center;
+    }
+    .nav-links > li > a.right-link { color: rgba(255,255,255,0.72); }
+    .nav-links > li > a.right-link:hover { color: #ffcc00; }
 
-.program-section h2{
-  font-size:2rem;
-  font-weight:800;
-  color:#0f172a;
-  margin-bottom:18px;
-}
+    a.contact-nav-button {
+      margin-left: 8px;
+      padding: 10px 20px;
+      border-radius: 10px;
+      background: #ffcc00;
+      color: #0b1220;
+      font-weight: 800;
+      transition: all 0.2s ease;
+      box-shadow: 0 6px 18px rgba(255, 204, 0, 0.18);
+    }
+    a.contact-nav-button i { color: #0b1220 !important; font-size: 0.9rem; }
+    a.contact-nav-button:hover {
+      background: #f5b800 !important;
+      color: #0b1220 !important;
+      transform: translateY(-1px);
+      box-shadow: 0 10px 24px rgba(255, 204, 0, 0.28);
+    }
+    a.contact-nav-button::after { display: none !important; }
 
-.program-section p{
-  max-width:900px;
-  margin:auto;
-  color:#475569;
-  line-height:1.8;
-  font-size:1.05rem;
-}
+    .nav-toggle {
+      display: none;
+      width: 40px; height: 40px;
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 8px;
+      background: transparent;
+      cursor: pointer;
+      padding: 0;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+    }
+    .nav-toggle span {
+      display: block; width: 16px; height: 2px;
+      margin: 0 auto; background: #fff;
+      transition: all 0.3s ease;
+    }
+    .nav-spacer { height: 68px; display: block; }
 
-/* ================= CARD GRID ================= */
+    @media (max-width: 1024px) {
+      .nav-inner { padding: 0 18px; height: 62px; }
+      .nav-spacer { height: 62px; }
+      .nav-toggle { display: flex; z-index: 10600; }
 
-.card-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:30px;
-  max-width:1200px;
-  margin:50px auto;
-}
+      .nav-links {
+        position: fixed;
+        top: 62px; left: 0; right: 0; bottom: auto;
+        height: calc(100dvh - 62px);
+        background: rgba(7, 16, 31, 0.98);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 18px 0 40px;
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+        transform: translateX(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition:
+          transform 0.42s cubic-bezier(0.4, 0, 0.2, 1),
+          opacity 0.28s ease,
+          visibility 0s linear 0.42s;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior: contain;
+        z-index: 10500;
+      }
+      .nav-links.active {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        transition:
+          transform 0.42s cubic-bezier(0.4, 0, 0.2, 1),
+          opacity 0.28s ease,
+          visibility 0s;
+      }
+      .nav-links > li {
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+        opacity: 0; transform: translateX(-14px);
+        transition: opacity 0.32s ease, transform 0.32s ease;
+        position: relative; z-index: 1;
+      }
+      .nav-links.active > li { opacity: 1; transform: translateX(0); }
+      .nav-links.active > li:nth-child(1) { transition-delay: 0.06s; }
+      .nav-links.active > li:nth-child(2) { transition-delay: 0.10s; }
+      .nav-links.active > li:nth-child(3) { transition-delay: 0.14s; }
+      .nav-links.active > li:nth-child(4) { transition-delay: 0.18s; }
+      .nav-links.active > li:nth-child(5) { transition-delay: 0.22s; }
+      .nav-links.active > li:nth-child(6) { transition-delay: 0.26s; }
+      .nav-links.active > li:nth-child(7) { transition-delay: 0.30s; }
+      .nav-links.active > li:nth-child(8) { transition-delay: 0.34s; }
 
-.card{
-  background:white;
-  padding:35px 28px;
-  border-radius:18px;
-  border:1px solid rgba(15,23,42,0.08);
-  box-shadow:0 12px 35px rgba(2,6,23,0.08);
-  transition:0.3s ease;
-  text-align:left;
-}
+      .nav-links a {
+        display: flex; align-items: center;
+        justify-content: flex-start;
+        padding: 18px 24px;
+        font-size: 1.05rem;
+        font-weight: 650;
+        border-radius: 0;
+        transition: color 0.2s ease, background 0.2s ease, padding-left 0.25s ease;
+      }
+      .nav-links > li > a:not(.contact-nav-button)::after { display: none; }
+      .nav-links > li > a:not(.contact-nav-button):hover,
+      .nav-links > li > a:not(.contact-nav-button):active,
+      .nav-links > li > a.active-page {
+        color: #ffcc00 !important;
+        background: rgba(255, 204, 0, 0.06);
+        padding-left: 32px;
+      }
+      .nav-sep { display: none; }
+      a.contact-nav-button {
+        margin: 22px 24px 0;
+        padding: 14px 20px;
+        justify-content: center;
+        text-align: center;
+        border-radius: 12px;
+        font-size: 1rem;
+        background: linear-gradient(135deg, #ffcc00, #f5b800);
+        color: #0b1220;
+        box-shadow: 0 12px 28px rgba(255, 204, 0, 0.22);
+      }
+      body.nav-open { overflow: hidden; }
+      .nav-toggle.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+      .nav-toggle.active span:nth-child(2) { opacity: 0; }
+      .nav-toggle.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    }
 
-.card:hover{
-  transform:translateY(-8px);
-  box-shadow:0 22px 60px rgba(2,6,23,0.18);
-}
+    /* ========== HERO ========== */
+    .hero-modern {
+      position: relative;
+      height: 82vh;
+      min-height: 600px;
+      max-height: 820px;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+    .hero-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding: 0 24px 130px;
+    }
+    .hero-bg-modern {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -2;
+      display: block;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(900px 500px at 20% 15%, rgba(255,204,0,0.10), transparent 60%),
+        radial-gradient(760px 420px at 80% 10%, rgba(59,130,246,0.10), transparent 55%),
+        linear-gradient(135deg, rgba(2,6,23,0.35), rgba(2,6,23,0.15));
+      z-index: -1;
+      pointer-events: none;
+    }
+    .hero-content-modern {
+      position: relative;
+      z-index: 2;
+      max-width: 1020px;
+      text-align: center;
+      color: #fff;
+      padding: 28px 30px 24px;
+      border-radius: 20px;
+      background: rgba(2, 6, 23, 0.14);
+      border: 1px solid rgba(255,255,255,0.18);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 18px 60px rgba(0,0,0,0.32);
+    }
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.10);
+      border: 1px solid rgba(255,255,255,0.14);
+      font-size: 0.88rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      margin-bottom: 16px;
+      color: rgba(255,255,255,0.94);
+    }
+    .hero-kicker i { color: #ffcc00; font-size: 0.9rem; }
 
-.card i{
-  font-size:26px;
-  color:#1e3a8a;
-  margin-bottom:14px;
-}
+    .hero-heading {
+      font-size: clamp(1.75rem, 3vw, 2.35rem);
+      font-weight: 950;
+      line-height: 1.12;
+      letter-spacing: -0.02em;
+      margin: 0 0 14px;
+      color: #fff;
+      text-shadow: 0 12px 40px rgba(0,0,0,0.35);
+    }
+    .hero-sub {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: rgba(255,255,255,0.92);
+      margin: 0 auto;
+      max-width: 880px;
+    }
 
-.card h3{
-  font-size:1.2rem;
-  font-weight:700;
-  margin-bottom:12px;
-  color:#0f172a;
-}
+    /* ========== SEPARATOR ========== */
+    .hero-separator {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 24px;
+      margin: 0;
+      background: #fff;
+    }
+    .hero-separator-line {
+      height: 3px;
+      width: 100%;
+      max-width: 220px;
+      background: linear-gradient(90deg, transparent, #ffcc00, #f5b800, #ffcc00, transparent);
+      border-radius: 999px;
+    }
 
-.card ul{
-  padding-left:18px;
-  color:#475569;
-  line-height:1.7;
-}
+    /* ========== MAIN CONTENT ========== */
+    .content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+    .intro-section { margin: 0 0 60px; }
+    .intro-content { max-width: 1000px; margin: 0 auto; }
+    .intro-content h1 {
+      font-size: clamp(1.8rem, 3vw, 2.3rem);
+      font-weight: 950;
+      letter-spacing: -0.02em;
+      color: #0f172a;
+      margin: 0 0 20px;
+      text-align: center;
+    }
+    .intro-text {
+      font-size: 1.08rem;
+      color: #334155;
+      line-height: 1.85;
+      font-weight: 500;
+      margin: 0 0 30px;
+    }
+    .intro-text a {
+      color: #0b2a5b;
+      font-weight: 700;
+      text-decoration: none;
+      border-bottom: 2px solid rgba(11,42,91,0.20);
+      transition: border-color .2s ease;
+    }
+    .intro-text a:hover { border-color: #ffcc00; }
 
-.card li{
-  margin-bottom:8px;
-}
+    .intro-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin: 30px 0;
+    }
+    .intro-item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 22px 20px;
+      background: #f8fafc;
+      border-radius: 14px;
+      border-left: 4px solid #ffcc00;
+      height: 100%;
+    }
+    .intro-item i {
+      font-size: 22px;
+      color: #0b2a5b;
+      flex-shrink: 0;
+    }
+    .intro-item p {
+      margin: 0;
+      font-size: 0.98rem;
+      color: #334155;
+      line-height: 1.7;
+      font-weight: 500;
+    }
+    @media (max-width: 900px) {
+      .intro-list { grid-template-columns: 1fr; }
+    }
 
-/* Responsive */
+    .intro-footer {
+      font-size: 1.05rem;
+      color: #334155;
+      line-height: 1.85;
+      font-weight: 500;
+      margin: 30px 0 0;
+      padding-top: 24px;
+      border-top: 1px solid rgba(15,23,42,0.08);
+    }
 
-@media(max-width:1000px){
-  .card-grid{ grid-template-columns:repeat(2,1fr); }
-}
+    /* ========== TRACKS ========== */
+    .cpe-topics { margin: 60px 0 0; }
+    .cpe-topics-header {
+      text-align: center;
+      max-width: 880px;
+      margin: 0 auto 36px;
+    }
+    .cpe-topics-header h2 {
+      font-size: clamp(1.5rem, 2.5vw, 2rem);
+      font-weight: 950;
+      color: #0f172a;
+      letter-spacing: -0.02em;
+      margin: 0 0 14px;
+    }
+    .cpe-topics-header p {
+      font-size: 1.03rem;
+      color: #475569;
+      line-height: 1.8;
+      font-weight: 500;
+      margin: 0;
+    }
 
-@media(max-width:650px){
-  .card-grid{ grid-template-columns:1fr; }
-}
+    .cpe-topic-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+    .cpe-topic-card {
+      background: #fff;
+      border: 1px solid rgba(15,23,42,0.10);
+      border-radius: 18px;
+      padding: 26px 24px;
+      box-shadow: 0 12px 30px rgba(2,6,23,0.06);
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+    .cpe-topic-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 44px rgba(2,6,23,0.10);
+    }
+    .cpe-topic-card h3 {
+      font-size: 1.15rem;
+      font-weight: 950;
+      color: #0b2a5b;
+      margin: 0 0 12px;
+      letter-spacing: -0.01em;
+    }
+    .cpe-topic-card p {
+      font-size: 0.98rem;
+      color: #475569;
+      line-height: 1.7;
+      font-weight: 500;
+      margin: 0 0 14px;
+    }
+    .cpe-topic-card ul {
+      margin: 0;
+      padding-left: 20px;
+      color: #334155;
+      font-size: 0.95rem;
+      line-height: 1.75;
+      font-weight: 500;
+    }
+    .cpe-topic-card li { margin: 0 0 6px; }
 
-</style>
+    @media (max-width: 900px) {
+      .cpe-topic-grid { grid-template-columns: 1fr; }
+    }
 
+    /* ========== PROGRAM CARDS ========== */
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin: 60px 0 0;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid rgba(15,23,42,0.10);
+      border-radius: 16px;
+      padding: 26px 20px;
+      text-decoration: none;
+      color: inherit;
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+      box-shadow: 0 10px 26px rgba(2,6,23,0.06);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 46px rgba(2,6,23,0.12);
+      border-color: rgba(255,204,0,0.35);
+    }
+    .card i {
+      display: block;
+      margin-bottom: 14px;
+      font-size: 1.7rem;
+    }
+    .card h2 {
+      font-size: 1rem;
+      font-weight: 950;
+      color: #0f172a;
+      letter-spacing: -0.01em;
+      margin: 0 0 10px;
+      line-height: 1.3;
+    }
+    .card p {
+      font-size: 0.9rem;
+      color: #64748b;
+      line-height: 1.6;
+      font-weight: 500;
+      margin: 0;
+    }
+    @media (max-width: 900px) {
+      .card-container { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 500px) {
+      .card-container { grid-template-columns: 1fr; }
+    }
+
+    /* ========== CTA BAND ========== */
+    .cpe-cta-band {
+      margin: 60px 0 0;
+      padding: 40px 32px;
+      border-radius: 22px;
+      background: linear-gradient(135deg, #07101f, #0b2a5b);
+      color: #fff;
+      text-align: center;
+      box-shadow: 0 24px 60px rgba(2,6,23,0.20);
+    }
+    .cpe-cta-band h2 {
+      font-size: clamp(1.4rem, 2.2vw, 1.9rem);
+      font-weight: 950;
+      letter-spacing: -0.02em;
+      margin: 0 0 12px;
+      color: #fff;
+    }
+    .cpe-cta-band p {
+      color: rgba(255,255,255,0.90);
+      max-width: 640px;
+      margin: 0 auto 24px;
+      font-size: 1.03rem;
+      line-height: 1.75;
+    }
+    .cpe-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 28px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #ffcc00, #f5b800);
+      color: #182235;
+      font-weight: 900;
+      text-decoration: none;
+      box-shadow: 0 16px 34px rgba(255,204,0,0.24);
+      transition: transform .2s ease;
+    }
+    .cpe-cta-btn:hover { transform: translateY(-2px); }
+
+    @media (max-width: 600px) {
+      .hero-modern { height: 68vh; min-height: 500px; }
+      .hero-inner { padding: 0 18px 100px; }
+      .hero-content-modern { padding: 22px 18px 20px; }
+      .hero-separator { padding: 30px 18px; }
+      .content { padding: 0 18px 60px; }
+    }
+  </style>
 </head>
 
 <body>
 
-<nav class="navbar">
-  <div class="logo">
-    <img src="logo.webp" alt="ITECCS Logo">
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <img src="logggo-bg.png" alt="ITECCS Logo" width="140" height="40" loading="eager">
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="research.html">Research</a></li>
+      <li><a href="education.html" class="active-page">Education</a></li>
+      <li><a href="consulting.html">Consulting</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="founder.html">Who We Are</a></li>
+
+      <li class="nav-sep" aria-hidden="true"></li>
+
+      <li><a href="howtopay.html" class="right-link">How to Pay</a></li>
+      <li>
+        <a href="contact.html" class="contact-nav-button">
+          <i class="fas fa-envelope"></i> Contact Us
+        </a>
+      </li>
+    </ul>
   </div>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About Us</a></li>
-    <li><a href="founder.html">Who We Are</a></li>
-    <li><a href="research.html">Research & Innovation Programs</a></li>
-    <li><a href="education.html">Education & Professional Training</a></li>
-    <li><a href="consulting.html">Industry Collaboration & Technical Advisory</a></li>
-    <li>
-      <a href="contact.html" class="contact-nav-button">
-        <i class="fas fa-envelope"></i> Contact Us
-      </a>
-    </li>
-  </ul>
 </nav>
 
-<!-- HERO -->
+<div class="nav-spacer"></div>
 
-<section class="program-hero">
-  <h1>Research & Innovation Programs</h1>
-  <p>
-    ITECCS designs and delivers rigorous research-driven programs in applied mathematics, artificial intelligence, 
-    scientific computing, multiphysics simulation, renewable energy systems, cybersecurity, and quantum technologies — 
-    integrating theory, computation, and real-world deployment.
-  </p>
+
+<!-- ========== HERO ========== -->
+<section class="hero-modern">
+  <div class="hero-inner">
+    <div class="hero-overlay"></div>
+    <img src="education.jpg" alt="ITECCS Continuing Education and Professional Development" class="hero-bg-modern" />
+
+    <div class="hero-content-modern">
+      <div class="hero-kicker">
+        <i class="fas fa-infinity"></i>
+        <span>Continuing Education &amp; Professional Development</span>
+      </div>
+
+      <h1 class="hero-heading">Continuing Education &amp; Professional Development</h1>
+
+      <p class="hero-sub">
+        Flexible pathways for engineers, researchers, and technical professionals to build new capabilities,
+        earn recognized credentials, and stay current with advancing computational science, AI, and engineering practice.
+      </p>
+    </div>
+  </div>
 </section>
 
-<!-- OVERVIEW -->
 
-<section class="program-section">
-  <h2>Advanced Academic & Professional Programs</h2>
-  <p>
-    We serve universities, research institutions, government agencies, and industry partners through 
-    specialized training, grant proposal development, academic program evaluation, and 
-    workforce advancement initiatives aligned with emerging technological frontiers.
-  </p>
+<!-- ========== DETACHED SEPARATOR ========== -->
+<div class="hero-separator" aria-hidden="true">
+  <div class="hero-separator-line"></div>
+</div>
+
+
+<main class="content">
+
+<!-- ========== INTRO ========== -->
+<section class="intro-section">
+  <div class="intro-content">
+    <h1>Continuing Education &amp; Professional Development</h1>
+
+    <p class="intro-text">
+      ITECCS Continuing Education supports lifelong learning for professionals working in
+      <a href="research.html">applied mathematics</a>, <a href="consulting.html">engineering simulation</a>,
+      artificial intelligence, scientific computing, and related technical fields. Programs are designed
+      to fit the schedules of working professionals and to deliver measurable capability in a compact format.
+    </p>
+
+    <div class="intro-list">
+      <div class="intro-item">
+        <i class="fas fa-certificate"></i>
+        <p>
+          Professional certificates and Continuing Professional Education (CPE) credits designed
+          to strengthen career pathways and meet industry-recognized standards.
+        </p>
+      </div>
+      <div class="intro-item">
+        <i class="fas fa-clock"></i>
+        <p>
+          Flexible formats including online, hybrid, and self-paced modules so learning fits
+          around work, research, and family commitments.
+        </p>
+      </div>
+      <div class="intro-item">
+        <i class="fas fa-layer-group"></i>
+        <p>
+          Stackable micro-credentials that combine into larger certificates, letting learners
+          progress module by module without enrolling in a full program upfront.
+        </p>
+      </div>
+    </div>
+
+    <p class="intro-footer">
+      Whether your goal is a focused skill update, a recognized credential, or a long-term
+      capability build-out, ITECCS Continuing Education provides a pathway that is rigorous,
+      practical, and aligned with modern computational and engineering practice.
+    </p>
+  </div>
 </section>
 
-<!-- CARDS -->
 
-<div class="card-grid">
-
-  <div class="card">
-    <i class="fas fa-certificate"></i>
-    <h3>Certificate Programs & Continuing Professional Education (CPE)</h3>
-    <ul>
-      <li>Advanced Applied Mathematics</li>
-      <li>AI & Data-Driven Engineering</li>
-      <li>Scientific Computing & HPC</li>
-      <li>Cybersecurity & Secure Systems</li>
-      <li>Renewable Energy Modeling</li>
-    </ul>
+<!-- ========== CPE TRACKS ========== -->
+<section class="cpe-topics">
+  <div class="cpe-topics-header">
+    <h2>Continuing Education Pathways</h2>
+    <p>
+      Our Continuing Education offerings span the full range of computational and engineering
+      disciplines, with each pathway focused on a clearly defined set of professional outcomes.
+    </p>
   </div>
 
-  <div class="card">
-    <i class="fas fa-chalkboard-teacher"></i>
-    <h3>Custom Training & Workforce Development</h3>
-    <ul>
-      <li>Tailored industry-focused bootcamps</li>
-      <li>Upskilling & Reskilling initiatives</li>
-      <li>Multiphysics simulation training</li>
-      <li>Inverse modeling & imaging workshops</li>
-      <li>AI-powered engineering systems</li>
-    </ul>
-  </div>
+  <div class="cpe-topic-grid">
 
-  <div class="card">
-    <i class="fas fa-microscope"></i>
-    <h3>Academic & Research Support</h3>
-    <ul>
-      <li>Grant proposal development</li>
-      <li>Research mentorship</li>
-      <li>Curriculum design & evaluation</li>
-      <li>Interdisciplinary program building</li>
-      <li>Research-to-industry translation</li>
-    </ul>
+    <div class="cpe-topic-card">
+      <h3>Professional Certificate Programs</h3>
+      <p>
+        Focused certificate tracks that build deep capability in a specific discipline.
+      </p>
+      <ul>
+        <li>AI &amp; Scientific Machine Learning</li>
+        <li>Scientific Computing &amp; HPC</li>
+        <li>CFD, FEA &amp; Multiphysics Simulation</li>
+        <li>Applied Statistics &amp; Data Science</li>
+        <li>Systems &amp; Cybersecurity Engineering</li>
+      </ul>
+    </div>
+
+    <div class="cpe-topic-card">
+      <h3>Continuing Professional Education (CPE)</h3>
+      <p>
+        CPE-eligible coursework for licensed engineers and technical professionals.
+      </p>
+      <ul>
+        <li>Ethics &amp; professional practice</li>
+        <li>Standards, verification, and validation</li>
+        <li>Technical writing and research methods</li>
+        <li>Digital engineering and model lifecycle</li>
+        <li>Regulatory and compliance frameworks</li>
+      </ul>
+    </div>
+
+    <div class="cpe-topic-card">
+      <h3>Corporate &amp; Team Training</h3>
+      <p>
+        Customized programs for engineering and research teams at the organizational level.
+      </p>
+      <ul>
+        <li>Custom curriculum design for corporate cohorts</li>
+        <li>Hands-on workshops delivered on-site or online</li>
+        <li>Simulation and modeling pipelines for teams</li>
+        <li>AI adoption and workflow integration</li>
+        <li>Progress tracking and completion certificates</li>
+      </ul>
+    </div>
+
+    <div class="cpe-topic-card">
+      <h3>Micro-Credentials &amp; Stackable Pathways</h3>
+      <p>
+        Modular learning units that can be combined into larger credentials.
+      </p>
+      <ul>
+        <li>Short-format modules on specific technologies</li>
+        <li>Stackable toward advanced certificates</li>
+        <li>Assessment-based, verifiable completion</li>
+        <li>Ideal for focused skill updates</li>
+        <li>Digital badges and transcript records</li>
+      </ul>
+    </div>
+
+    <div class="cpe-topic-card">
+      <h3>Flexible &amp; Self-Paced Formats</h3>
+      <p>
+        Learning formats designed to fit around the schedules of working professionals.
+      </p>
+      <ul>
+        <li>Fully online, asynchronous modules</li>
+        <li>Hybrid cohort-based programs</li>
+        <li>Weekend and evening intensive options</li>
+        <li>On-demand content with mentor support</li>
+        <li>Multi-month pacing for complex tracks</li>
+      </ul>
+    </div>
+
+    <div class="cpe-topic-card">
+      <h3>Research &amp; Academic Preparation</h3>
+      <p>
+        Continuing Education for learners preparing for advanced research or academic pathways.
+      </p>
+      <ul>
+        <li>Graduate-level mathematical foundations</li>
+        <li>Research methodologies and computational methods</li>
+        <li>Publication and proposal writing</li>
+        <li>Doctoral preparation and mentorship</li>
+        <li>Interdisciplinary technical foundations</li>
+      </ul>
+    </div>
+
   </div>
+</section>
+
+
+<!-- ========== PROGRAM CARDS ========== -->
+<div class="card-container">
+
+  <a href="courses.html" class="card">
+    <i class="fas fa-book-open" style="color:#2575fc;"></i>
+    <h2>All Courses</h2>
+    <p>Browse the full ITECCS course catalog across disciplines.</p>
+  </a>
+
+  <a href="certifications.html" class="card">
+    <i class="fas fa-scroll" style="color:#2575fc;"></i>
+    <h2>Certifications</h2>
+    <p>Recognized credentials in computational and scientific disciplines.</p>
+  </a>
+
+  <a href="upskilling.html" class="card">
+    <i class="fas fa-rocket" style="color:#2575fc;"></i>
+    <h2>UpSkilling</h2>
+    <p>Advanced training to master emerging technologies and AI.</p>
+  </a>
+
+  <a href="contact.html" class="card">
+    <i class="fas fa-envelope" style="color:#2575fc;"></i>
+    <h2>Request Info</h2>
+    <p>Get details about Continuing Education pathways and enrollment.</p>
+  </a>
 
 </div>
+
+
+<!-- ========== CTA BAND ========== -->
+<section class="cpe-cta-band">
+  <h2>Ready to advance your capabilities?</h2>
+  <p>
+    Whether you are an engineer, researcher, or technical professional seeking a focused credential,
+    a stackable pathway, or a fully customized program for your team, ITECCS Continuing Education
+    can help you get there.
+  </p>
+  <a href="contact.html" class="cpe-cta-btn">
+    Request Program Information <i class="fas fa-arrow-right"></i>
+  </a>
+</section>
+
+</main>
+
 
 <footer>
   <p>&copy; 2026 ITECCS. All rights reserved.</p>
 </footer>
+
+
+<button id="custom-chat-btn" aria-label="Open chat">
+  <i class="fas fa-comments"></i>
+</button>
+
+
+<!-- Tawk.to -->
+<script type="text/javascript">
+  var Tawk_API = Tawk_API || {};
+  var Tawk_LoadStart = new Date();
+
+  (function(){
+    var s1=document.createElement("script"),
+        s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/685e2123390063190e54b4b2/1iunr2sv2';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+  })();
+
+  Tawk_API.onLoad = function(){ Tawk_API.hideWidget(); };
+
+  document.addEventListener("DOMContentLoaded", function(){
+    var btn = document.getElementById("custom-chat-btn");
+    if(btn){
+      btn.addEventListener("click", function(){
+        if(typeof Tawk_API !== "undefined"){ Tawk_API.maximize(); }
+      });
+    }
+  });
+</script>
+
+
+<script>
+(function () {
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  if (!navToggle || !navLinks) return;
+
+  function openMenu() {
+    navToggle.classList.add('active');
+    navLinks.classList.add('active');
+    navToggle.setAttribute('aria-expanded', 'true');
+    document.body.classList.add('nav-open');
+  }
+
+  function closeMenu() {
+    navToggle.classList.remove('active');
+    navLinks.classList.remove('active');
+    navToggle.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('nav-open');
+  }
+
+  navToggle.addEventListener('click', () => {
+    if (navLinks.classList.contains('active')) closeMenu();
+    else openMenu();
+  });
+
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!navLinks.classList.contains('active')) return;
+    if (!navLinks.contains(e.target) && !navToggle.contains(e.target)) {
+      closeMenu();
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navLinks.classList.contains('active')) {
+      closeMenu();
+    }
+  });
+
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      if (window.innerWidth > 1024 && navLinks.classList.contains('active')) {
+        closeMenu();
+      }
+    }, 150);
+  });
+})();
+</script>
+
+
+<!-- Navbar hide/show on scroll -->
+<script>
+(function () {
+  const navbar = document.getElementById('navbar');
+  if (!navbar) return;
+  let lastScrollY = window.scrollY;
+  let ticking = false;
+  const NAV_HEIGHT = 100;
+  const SCROLL_DELTA = 6;
+
+  function updateNavbar() {
+    const currentScrollY = window.scrollY;
+
+    if (document.body.classList.contains('nav-open')) {
+      navbar.classList.remove('nav-hidden');
+      lastScrollY = currentScrollY;
+      ticking = false;
+      return;
+    }
+
+    if (currentScrollY < NAV_HEIGHT) {
+      navbar.classList.remove('nav-hidden');
+    } else if (currentScrollY > lastScrollY + SCROLL_DELTA) {
+      navbar.classList.add('nav-hidden');
+    } else if (currentScrollY < lastScrollY - SCROLL_DELTA) {
+      navbar.classList.remove('nav-hidden');
+    }
+    lastScrollY = currentScrollY;
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      window.requestAnimationFrame(updateNavbar);
+      ticking = true;
+    }
+  }, { passive: true });
+})();
+</script>
 
 </body>
 </html>
