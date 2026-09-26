@@ -40,66 +40,61 @@
   }
   </script>
 
-  <!-- ========== SCHEMA: Course Catalog ========== -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "name": "ITECCS Education and Training Programs",
-    "description": "Advanced education and professional training in applied mathematics, scientific computing, engineering simulation, and AI for science.",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "item": {
-          "@type": "Course",
-          "name": "Online Mathematics Courses",
-          "description": "Online calculus, linear algebra, differential equations, and numerical analysis courses for scientific and engineering applications.",
-          "provider": { "@type": "EducationalOrganization", "name": "ITECCS", "url": "https://iteccs.com" },
-          "courseMode": "Online",
-          "inLanguage": "en"
-        }
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "item": {
-          "@type": "Course",
-          "name": "Scientific Computing Training",
-          "description": "Professional training in scientific computing, Python for scientific computing, HPC training, and numerical methods for PDEs.",
-          "provider": { "@type": "EducationalOrganization", "name": "ITECCS", "url": "https://iteccs.com" },
-          "courseMode": "Online",
-          "inLanguage": "en"
-        }
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "item": {
-          "@type": "Course",
-          "name": "Engineering Simulation Courses",
-          "description": "Courses in computational fluid dynamics (CFD), finite element analysis (FEA), multiphysics simulation, and digital twins.",
-          "provider": { "@type": "EducationalOrganization", "name": "ITECCS", "url": "https://iteccs.com" },
-          "courseMode": "Online",
-          "inLanguage": "en"
-        }
-      },
-      {
-        "@type": "ListItem",
-        "position": 4,
-        "item": {
-          "@type": "Course",
-          "name": "AI and Scientific Machine Learning",
-          "description": "Training in AI for scientific computing, scientific machine learning (SciML), and physics-informed neural networks (PINNs).",
-          "provider": { "@type": "EducationalOrganization", "name": "ITECCS", "url": "https://iteccs.com" },
-          "courseMode": "Online",
-          "inLanguage": "en"
-        }
+<!-- ========== SCHEMA: Course Catalog ========== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "ITECCS Education and Training Programs",
+  "description": "Advanced education and professional training in applied mathematics, scientific computing, engineering simulation, and AI for science.",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Course",
+        "name": "Online Mathematics Courses",
+        "description": "Online calculus, linear algebra, differential equations, and numerical analysis courses for scientific and engineering applications.",
+        "provider": { "@type": "EducationalOrganization", "name": "Institute of Technology, Engineering, Computing, and Computational Sciences", "url": "https://iteccs.com" },
+        "inLanguage": "en"
       }
-    ]
-  }
-  </script>
-
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Course",
+        "name": "Scientific Computing Training",
+        "description": "Professional training in scientific computing, Python for scientific computing, HPC training, and numerical methods for PDEs.",
+        "provider": { "@type": "EducationalOrganization", "name": "Institute of Technology, Engineering, Computing, and Computational Sciences", "url": "https://iteccs.com" },
+        "inLanguage": "en"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Course",
+        "name": "Engineering Simulation Courses",
+        "description": "Courses in computational fluid dynamics (CFD), finite element analysis (FEA), multiphysics simulation, and digital twins.",
+        "provider": { "@type": "EducationalOrganization", "name": "Institute of Technology, Engineering, Computing, and Computational Sciences", "url": "https://iteccs.com" },
+        "inLanguage": "en"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "Course",
+        "name": "AI and Scientific Machine Learning",
+        "description": "Training in AI for scientific computing, scientific machine learning (SciML), and physics-informed neural networks (PINNs).",
+        "provider": { "@type": "EducationalOrganization", "name": "Institute of Technology, Engineering, Computing, and Computational Sciences", "url": "https://iteccs.com" },
+        "inLanguage": "en"
+      }
+    }
+  ]
+}
+</script>
   <!-- ========== SCHEMA: FAQPage ========== -->
   <script type="application/ld+json">
   {
@@ -187,7 +182,7 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    /* ========== NAVBAR ========== */
+    /* ========== PREMIUM NAVBAR ========== */
     .navbar {
       position: fixed;
       top: 0; left: 0; right: 0;
@@ -211,39 +206,62 @@
       gap: 24px;
     }
 
-    .logo img { height: 40px; width: auto; display: block; transition: transform .2s ease; }
-    .logo:hover img { transform: scale(1.04); }
-
-    .nav-links {
-      display: flex; align-items: center; gap: 4px;
-      list-style: none; margin: 0; padding: 0;
-      flex: 1; justify-content: flex-end;
+    .logo img {
+      height: 40px;
+      width: auto;
+      display: block;
+      transition: transform 0.2s ease;
     }
 
-    .nav-links > li { position: relative; }
+    .logo:hover img {
+      transform: scale(1.04);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      flex: 1;
+      justify-content: flex-end;
+    }
+
+    .nav-links > li {
+      position: relative;
+    }
 
     .nav-links a {
-      display: inline-flex; align-items: center; gap: 6px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
       padding: 10px 14px;
-      font-size: 0.92rem; font-weight: 600;
+      font-size: 0.92rem;
+      font-weight: 600;
       color: rgba(255,255,255,0.78);
       text-decoration: none;
       transition: color 0.2s ease;
       position: relative;
     }
 
-    .nav-links > li > a:not(.contact-nav-button) { background: transparent !important; }
+    .nav-links > li > a:not(.contact-nav-button) {
+      background: transparent !important;
+    }
 
     .nav-links > li > a:not(.contact-nav-button)::after {
       content: "";
       position: absolute;
-      left: 14px; right: 14px; bottom: 2px;
+      left: 14px;
+      right: 14px;
+      bottom: 2px;
       height: 2px;
       background: #ffcc00;
       border-radius: 999px;
       transform: scaleX(0);
       transform-origin: center;
       transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      will-change: transform;
     }
 
     .nav-links > li > a:not(.contact-nav-button):hover,
@@ -262,26 +280,36 @@
     .nav-links > li > a.active-page::after { transform: scaleX(1); }
 
     .nav-sep {
-      width: 1px; height: 22px;
+      width: 1px;
+      height: 22px;
       background: rgba(255,255,255,0.16);
-      margin: 0 10px; align-self: center;
+      margin: 0 10px;
+      align-self: center;
     }
 
-    .nav-links > li > a.right-link { color: rgba(255,255,255,0.72); }
-    .nav-links > li > a.right-link:hover { color: #ffcc00; }
+    .nav-links > li > a.right-link {
+      color: rgba(255,255,255,0.72);
+      padding: 10px 14px;
+    }
+
+    .nav-links > li > a.right-link:hover {
+      color: #ffcc00;
+    }
 
     a.contact-nav-button {
-      margin-left: 8px !important;
-      padding: 10px 20px !important;
-      border-radius: 10px !important;
-      background: #ffcc00 !important;
-      color: #0b1220 !important;
-      font-weight: 800 !important;
-      transition: all 0.2s ease !important;
+      margin-left: 8px;
+      padding: 10px 20px;
+      border-radius: 10px;
+      background: #ffcc00;
+      color: #0b1220;
+      font-weight: 800;
+      transition: all 0.2s ease;
       box-shadow: 0 6px 18px rgba(255, 204, 0, 0.18);
     }
-
-    a.contact-nav-button i { color: #0b1220 !important; font-size: 0.9rem; }
+    a.contact-nav-button i {
+      color: #0b1220 !important;
+      font-size: 0.9rem;
+    }
 
     a.contact-nav-button:hover {
       background: #f5b800 !important;
@@ -290,11 +318,14 @@
       box-shadow: 0 10px 24px rgba(255, 204, 0, 0.28);
     }
 
-    a.contact-nav-button::after { display: none !important; }
+    a.contact-nav-button::after {
+      display: none !important;
+    }
 
     .nav-toggle {
       display: none;
-      width: 40px; height: 40px;
+      width: 40px;
+      height: 40px;
       border: 1px solid rgba(255,255,255,0.12);
       border-radius: 8px;
       background: transparent;
@@ -306,26 +337,42 @@
     }
 
     .nav-toggle span {
-      display: block; width: 16px; height: 2px;
-      margin: 0 auto; background: #fff;
+      display: block;
+      width: 16px;
+      height: 2px;
+      margin: 0 auto;
+      background: #fff;
       transition: all 0.3s ease;
     }
 
     .nav-spacer { height: 68px; display: block; }
 
     @media (max-width: 1024px) {
-      .nav-inner { padding: 0 18px; height: 62px; }
+      .nav-inner {
+        padding: 0 18px;
+        height: 62px;
+      }
+
       .nav-spacer { height: 62px; }
-      .nav-toggle { display: flex; }
+
+      .nav-toggle {
+        display: flex;
+        z-index: 10600;
+      }
 
       .nav-links {
         position: fixed;
-        top: 62px; left: 0; right: 0; bottom: 0;
+        top: 62px;
+        left: 0;
+        right: 0;
+        bottom: auto;
+        height: calc(100dvh - 62px);
         background: rgba(7, 16, 31, 0.98);
         backdrop-filter: blur(14px);
         -webkit-backdrop-filter: blur(14px);
         flex-direction: column;
-        align-items: stretch; gap: 0;
+        align-items: stretch;
+        gap: 0;
         padding: 18px 0 40px;
         border-bottom: 1px solid rgba(255,255,255,0.08);
         transform: translateX(-100%);
@@ -336,8 +383,10 @@
           opacity 0.28s ease,
           visibility 0s linear 0.42s;
         overflow-y: auto;
+        will-change: transform, opacity;
         -webkit-overflow-scrolling: touch;
         overscroll-behavior: contain;
+        z-index: 10500;
       }
 
       .nav-links.active {
@@ -352,11 +401,17 @@
 
       .nav-links > li {
         border-bottom: 1px solid rgba(255,255,255,0.05);
-        opacity: 0; transform: translateX(-14px);
+        opacity: 0;
+        transform: translateX(-14px);
         transition: opacity 0.32s ease, transform 0.32s ease;
+        position: relative;
+        z-index: 1;
       }
 
-      .nav-links.active > li { opacity: 1; transform: translateX(0); }
+      .nav-links.active > li {
+        opacity: 1;
+        transform: translateX(0);
+      }
 
       .nav-links.active > li:nth-child(1) { transition-delay: 0.06s; }
       .nav-links.active > li:nth-child(2) { transition-delay: 0.10s; }
@@ -368,14 +423,19 @@
       .nav-links.active > li:nth-child(8) { transition-delay: 0.34s; }
 
       .nav-links a {
-        display: flex; align-items: center;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
         padding: 18px 24px;
         font-size: 1.05rem;
         font-weight: 650;
         border-radius: 0;
+        transition: color 0.2s ease, background 0.2s ease, padding-left 0.25s ease;
       }
 
-      .nav-links > li > a:not(.contact-nav-button)::after { display: none; }
+      .nav-links > li > a:not(.contact-nav-button)::after {
+        display: none;
+      }
 
       .nav-links > li > a:not(.contact-nav-button):hover,
       .nav-links > li > a:not(.contact-nav-button):active,
@@ -388,20 +448,29 @@
       .nav-sep { display: none; }
 
       a.contact-nav-button {
-        margin: 22px 24px 0 !important;
-        padding: 14px 20px !important;
+        margin: 22px 24px 0;
+        padding: 14px 20px;
         justify-content: center;
         text-align: center;
-        border-radius: 12px !important;
-        font-size: 1rem !important;
-        background: linear-gradient(135deg, #ffcc00, #f5b800) !important;
+        border-radius: 12px;
+        font-size: 1rem;
+        background: linear-gradient(135deg, #ffcc00, #f5b800);
+        color: #0b1220;
+        box-shadow: 0 12px 28px rgba(255, 204, 0, 0.22);
+      }
+      body.nav-open {
+        overflow: hidden;
       }
 
-      body.nav-open { overflow: hidden; }
-
-      .nav-toggle.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-      .nav-toggle.active span:nth-child(2) { opacity: 0; }
-      .nav-toggle.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+      .nav-toggle.active span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+      }
+      .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+      }
+      .nav-toggle.active span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+      }
     }
 
     /* ========== HERO ========== */
@@ -913,7 +982,9 @@
 
       <li class="nav-sep" aria-hidden="true"></li>
 
-      <li><a href="howtopay.html" class="right-link">How to Pay</a></li>
+      <li>
+        <a href="howtopay.html" class="right-link">How to Pay</a>
+      </li>
       <li>
         <a href="contact.html" class="contact-nav-button">
           <i class="fas fa-envelope"></i> Contact Us
@@ -1346,7 +1417,6 @@
 (function () {
   const navbar = document.getElementById('navbar');
   if (!navbar) return;
-
   let lastScrollY = window.scrollY;
   let ticking = false;
   const NAV_HEIGHT = 100;
@@ -1355,16 +1425,20 @@
   function updateNavbar() {
     const currentScrollY = window.scrollY;
 
-    if (currentScrollY < NAV_HEIGHT) {
+    if (document.body.classList.contains('nav-open')) {
       navbar.classList.remove('nav-hidden');
-    }
-    else if (currentScrollY > lastScrollY + SCROLL_DELTA) {
-      navbar.classList.add('nav-hidden');
-    }
-    else if (currentScrollY < lastScrollY - SCROLL_DELTA) {
-      navbar.classList.remove('nav-hidden');
+      lastScrollY = currentScrollY;
+      ticking = false;
+      return;
     }
 
+    if (currentScrollY < NAV_HEIGHT) {
+      navbar.classList.remove('nav-hidden');
+    } else if (currentScrollY > lastScrollY + SCROLL_DELTA) {
+      navbar.classList.add('nav-hidden');
+    } else if (currentScrollY < lastScrollY - SCROLL_DELTA) {
+      navbar.classList.remove('nav-hidden');
+    }
     lastScrollY = currentScrollY;
     ticking = false;
   }
@@ -1387,12 +1461,10 @@
     const btn = item.querySelector('.faq-question');
     btn.addEventListener('click', () => {
       const isOpen = item.classList.contains('open');
-      // Close all
       items.forEach(i => {
         i.classList.remove('open');
         i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
       });
-      // Open clicked one (if not already open)
       if (!isOpen) {
         item.classList.add('open');
         btn.setAttribute('aria-expanded', 'true');

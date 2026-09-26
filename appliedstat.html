@@ -2,37 +2,50 @@
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T85X67KT5F"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T85X67KT5F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T85X67KT5F');
+  </script>
 
-  gtag('config', 'G-T85X67KT5F');
-</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - ITeccs</title>
+
+  <title>Applied Statistics & Probability Curriculum | ITECCS</title>
+  <meta name="description" content="ITECCS Applied Statistics & Probability curriculum: probability theory, stochastic foundations, computational statistics, statistical modeling, Bayesian methods, and advanced statistics.">
+  <link rel="canonical" href="https://iteccs.com/appliedstat" />
+
+  <meta property="og:title" content="Applied Statistics & Probability Curriculum | ITECCS" />
+  <meta property="og:description" content="Probability theory, stochastic foundations, computational statistics, statistical modeling, Bayesian methods, and advanced statistics." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://iteccs.com/appliedstat" />
+  <meta property="og:site_name" content="ITECCS" />
+  <meta property="og:image" content="https://iteccs.com/appstat.webp" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Applied Statistics & Probability Curriculum | ITECCS" />
+  <meta name="twitter:description" content="Probability theory, stochastic foundations, computational statistics, statistical modeling, Bayesian methods, and advanced statistics." />
+  <meta name="twitter:image" content="https://iteccs.com/appstat.webp" />
+
   <link rel="stylesheet" href="style.css">
-  <!-- Fonts and Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">
-      <img src="logo.webp" alt="ITeccs Logo">
+      <img src="logggo-bg.png" alt="ITECCS Logo">
     </div>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
       <li><a href="founder.html">Who We Are</a></li>
       <li><a href="research.html">Research & Innovation Programs</a></li>
-     
       <li><a href="education.html">Education & Professional Training</a></li>
-       <li><a href="consulting.html">Industry Collaboration & Technical Advisory</a></li>
+      <li><a href="consulting.html">Industry Collaboration & Technical Advisory</a></li>
       <li><a href="howtopay.html">How to Pay</a></li>
       <li>
         <a href="contact.html" class="contact-nav-button">
@@ -44,10 +57,10 @@
     <!-- Hero Modern -->
     <section class="hero-modern">
       <div class="hero-overlay"></div>
-      <img src="appstat.webp" alt="Statistics background" class="hero-bg-modern" />
+      <img src="appstat.webp" alt="Applied Statistics and Probability Curriculum" class="hero-bg-modern" />
       
       <div class="hero-content-modern">
-        <h2 class="hero-heading">Applied Statistics and Probability</h2>
+        <h1 class="hero-heading">Applied Statistics and Probability</h1>
         <p class="hero-sub">
           Learn to turn data into insight with Applied Statistics and Probability — mastering
           modeling, inference, and computational tools for impactful real-world solutions.
@@ -123,7 +136,7 @@
 
  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 ITeccs. All rights reserved.</p>
+    <p>&copy; 2026 ITECCS. All rights reserved.</p>
   </footer>
 
   <!-- Custom Chat Button -->
@@ -146,28 +159,24 @@
       s0.parentNode.insertBefore(s1,s0);
     })();
 
-    // Hide default widget once fully loaded
     Tawk_API.onLoad = function(){
       Tawk_API.hideWidget();
     };
 
-    // Custom button opens chat
     document.addEventListener("DOMContentLoaded", function(){
       var btn = document.getElementById("custom-chat-btn");
       if(btn){
         btn.addEventListener("click", function(){
           if(typeof Tawk_API !== "undefined"){
-            Tawk_API.maximize(); // open chat window
+            Tawk_API.maximize();
           }
         });
       }
     });
   </script>
-  <!-- End of Tawk.to Script -->        
 
   <!-- Embedded Animations -->
   <script>
-    // Scroll reveal effect
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) entry.target.classList.add('visible');
@@ -176,7 +185,6 @@
 
     document.querySelectorAll('.track-card, .section-title').forEach(el => observer.observe(el));
 
-    // 3D tilt effect
     const tiltCards = document.querySelectorAll('.track-card');
     tiltCards.forEach(card => {
       card.addEventListener('mousemove', (e) => {
@@ -192,9 +200,9 @@
       });
     });
 
-    // Subtle gradient animation
     document.addEventListener('DOMContentLoaded', () => {
       const bg = document.querySelector('.animated-bg');
+      if (!bg) return;
       let angle = 0;
       setInterval(() => {
         angle = (angle + 0.3) % 360;

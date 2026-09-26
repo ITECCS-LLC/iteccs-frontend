@@ -40,33 +40,32 @@
   }
   </script>
 
-  <!-- Schema: ProfessionalService / Service offerings -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "ITECCS Technical Advisory",
-    "url": "https://iteccs.com/consulting",
-    "description": "Technical advisory in applied mathematics, AI, scientific computing, HPC, CFD, FEA, multiphysics simulation, and digital twins.",
-    "provider": {
-      "@type": "EducationalOrganization",
-      "name": "ITECCS",
-      "url": "https://iteccs.com"
-    },
-    "areaServed": "Worldwide",
-    "serviceType": [
-      "Scientific Computing Consulting",
-      "Computational Modeling Services",
-      "CFD Consulting Services",
-      "Finite Element Analysis Consulting",
-      "Multiphysics Simulation Services",
-      "High Performance Computing Consulting",
-      "Digital Twin Consulting Services",
-      "Scientific Machine Learning Consulting"
-    ]
-  }
-  </script>
-
+<!-- Schema: Service offerings -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "ITECCS Technical Advisory",
+  "url": "https://iteccs.com/consulting",
+  "description": "Technical advisory in applied mathematics, AI, scientific computing, HPC, CFD, FEA, multiphysics simulation, and digital twins.",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": "Institute of Technology, Engineering, Computing, and Computational Sciences",
+    "url": "https://iteccs.com"
+  },
+  "areaServed": "Worldwide",
+  "serviceType": [
+    "Scientific Computing Consulting",
+    "Computational Modeling Services",
+    "CFD Consulting Services",
+    "Finite Element Analysis Consulting",
+    "Multiphysics Simulation Services",
+    "High Performance Computing Consulting",
+    "Digital Twin Consulting Services",
+    "Scientific Machine Learning Consulting"
+  ]
+}
+</script>
   <!-- Schema: FAQPage -->
   <script type="application/ld+json">
   {
@@ -287,12 +286,18 @@
 
       .nav-links {
         position: fixed;
-        top: 62px; left: 0; right: 0; bottom: 0;
+        top: 62px;
+        left: 0;
+        right: 0;
+        bottom: auto;
+        height: calc(100dvh - 62px);
+        z-index: 999;
         background: rgba(7, 16, 31, 0.98);
         backdrop-filter: blur(14px);
         -webkit-backdrop-filter: blur(14px);
         flex-direction: column;
-        align-items: stretch; gap: 0;
+        align-items: stretch;
+        gap: 0;
         padding: 18px 0 40px;
         border-bottom: 1px solid rgba(255,255,255,0.08);
         transform: translateX(-100%);
@@ -1310,6 +1315,14 @@
 
   function updateNavbar() {
     const currentScrollY = window.scrollY;
+
+    // Don't hide the navbar while the mobile menu is open
+    if (document.body.classList.contains('nav-open')) {
+      navbar.classList.remove('nav-hidden');
+      lastScrollY = currentScrollY;
+      ticking = false;
+      return;
+    }
 
     if (currentScrollY < NAV_HEIGHT) {
       navbar.classList.remove('nav-hidden');

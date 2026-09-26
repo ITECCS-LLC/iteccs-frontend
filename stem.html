@@ -1,73 +1,75 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stem</title>
+
+  <title>STEM Programs | ITECCS Mathematics, Engineering & Computing</title>
+  <meta name="description" content="ITECCS STEM programs in mathematical intelligence, mechanical and civil systems, materials and bio-systems, and computing and intelligent systems. Rigorous, industry-ready training.">
+  <link rel="canonical" href="https://iteccs.com/stem" />
+
+  <meta property="og:title" content="STEM Programs | ITECCS" />
+  <meta property="og:description" content="ITECCS STEM programs across mathematics, engineering, materials, and intelligent systems." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://iteccs.com/stem" />
+  <meta property="og:site_name" content="ITECCS" />
+  <meta property="og:image" content="https://iteccs.com/logggo-bg.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="STEM Programs | ITECCS" />
+  <meta name="twitter:description" content="ITECCS STEM programs across mathematics, engineering, materials, and intelligent systems." />
+  <meta name="twitter:image" content="https://iteccs.com/logggo-bg.png" />
+
   <link rel="stylesheet" href="style.css">
-  <!-- Fonts and Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>/* =====================
    STEM Program Cards
 ===================== */
 .program-wrapper {
-  max-width: 1400px; /* make grid wider */
+  max-width: 1400px;
   margin: 0 auto 4rem;
   padding: 0 1rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
-  gap: 30px; /* reduce gap a little */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
 }
 
-/* Glassy card style */
 .program-card {
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(12px);
   border-radius: 16px;
-  padding: 20px 15px; /* reduce vertical padding to make shorter height */
+  padding: 20px 15px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
   cursor: pointer;
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   transform-style: preserve-3d;
-
-  /* Make width stretch more inside the grid */
   height: auto; 
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
-
-  /* Scroll fade-in initial state */{
+.program-card {
   opacity: 0;
   transform: translateY(40px) rotateX(0deg) rotateY(0deg);
 }
 
-/* Scroll fade-in visible state */
 .program-card.visible {
   opacity: 1;
   transform: translateY(0) rotateX(0deg) rotateY(0deg);
   transition: transform 0.6s ease, opacity 0.6s ease;
 }
 
-/* Hover tilt + pop */
 .program-card:hover {
   transform: translateY(-10px) rotateX(var(--tiltX,0deg)) rotateY(var(--tiltY,0deg)) scale(1.03);
   box-shadow: 0 25px 40px rgba(37,117,252,0.25);
 }
 
-/* Card pop on click */
 .program-card.pop {
   transform: scale(1.05) rotateX(var(--tiltX,0deg)) rotateY(var(--tiltY,0deg));
 }
-
-/* Card headings and text */
 
 .program-card h3 {
   font-size: 1.4rem;
@@ -90,8 +92,6 @@
   font-size: 0.9rem;
 }
 
-
-/* Optional: animated icon circle (if used) */
 .program-card .card-icon-circle {
   width: 70px;
   height: 70px;
@@ -116,7 +116,6 @@
   box-shadow: 0 12px 35px rgba(37,117,252,0.5);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .program-card {
     padding: 25px 15px;
@@ -125,14 +124,13 @@
     font-size: 1.3rem;
   }
 }
-
 </style>
 </head>
 <body>
   <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">
-      <img src="logo.png" alt="ITeccs Logo">
+      <img src="logggo-bg.png" alt="ITECCS Logo">
     </div>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
@@ -154,7 +152,7 @@
     <div class="hero-overlay"></div>
     <img src="stem.webp" alt="STEM background" class="hero-bg-modern" />
     <div class="hero-content-modern">
-      <h2 class="hero-heading">STEM Programs</h2>
+      <h1 class="hero-heading">STEM Programs</h1>
       <p class="hero-sub">
         Engineering intelligence, Designing systems, and Advancing human capability. 
         Our programs connect mathematics, computation, engineering, materials, medicine, and intelligent systems.
@@ -235,7 +233,7 @@
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 ITeccs. All rights reserved.</p>
+    <p>&copy; 2026 ITECCS. All rights reserved.</p>
   </footer>
 
   <!-- Custom Chat Button -->
@@ -267,7 +265,6 @@
 
   <!-- Embedded Animations JS -->
   <script>
-    // Scroll fade-in for program cards
     const cards = document.querySelectorAll('.program-card');
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -276,7 +273,6 @@
     }, { threshold: 0.2 });
     cards.forEach(card => observer.observe(card));
 
-    // Tilt hover + pop effect
     cards.forEach(card => {
       card.addEventListener('mousemove', e => {
         const rect = card.getBoundingClientRect();
@@ -299,7 +295,6 @@
       });
     });
 
-    // Hero parallax background
     const heroBg = document.querySelector('.hero-bg-modern');
     document.addEventListener('mousemove', e => {
       const x = (e.clientX / window.innerWidth - 0.5) * 10;
@@ -307,7 +302,6 @@
       heroBg.style.transform = `translate(${x}px, ${y}px) scale(1.05)`;
     });
 
-    // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e){
         e.preventDefault();
